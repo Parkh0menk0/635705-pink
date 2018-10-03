@@ -41,24 +41,24 @@
     </div>
     <div class="download">
       <a class="download__link" href="https://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com">Скачать приложение</button>
-      <div class="download__os">
-        <li class="download__item">
-          <a class="download__link download__link--apple" href="#">
-            <span class="visually-hidden">Эпл</span>
-          </a>
-        </li>
-        <li class="download__item">
-          <a class="download__link download__link--android" href="#">
-            <span class="visually-hidden">Андроид</span>
-          </a>
-        </li>
-        <li class="download__item">
-          <a class="download__link download__link--windows" href="#">
-            <span class="visually-hidden">Виндовс</span>
-          </a>
-        </li>
-      </div>
-      <p class="download__for">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="download__os">
+          <li class="download__item">
+            <a class="download__link download__link--apple" href="#">
+              <span class="visually-hidden">Эпл</span>
+            </a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--android" href="#">
+              <span class="visually-hidden">Андроид</span>
+            </a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--windows" href="#">
+              <span class="visually-hidden">Виндовс</span>
+            </a>
+          </li>
+        </div>
+        <p class="download__for">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
     <div class="intro">
       <p class="intro__item">Устали от серости мегаполиса?</p>
@@ -80,7 +80,22 @@
         </li>
       </ul>
     </div>
-    <div class="reviews">
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <input id="nikolay-petrov" class="visually-hidden" type="radio" name="review-toggle" value="nikolay-petrov" checked>
+      <!-- <input id="" class="visually-hidden" type="radio" name="review-toggle" value="">
+    <input id="" class="visually-hidden" type="radio" name="review-toggle" value=""> -->
+      <div class="reviews__controls">
+        <label for="nikolay-petrov">
+          <span class="visually-hidden">Николай Петров</span>
+        </label>
+        <!-- <label for="">
+        <span class="visually-hidden"></span>
+      </label>
+      <label for="">
+        <span class="visually-hidden"></span>
+      </label> -->
+      </div>
       <ul class="reviews__list">
         <li class="reviews__item">
           <h3 class="reviews__title">Николай Петров</h3>
@@ -89,22 +104,23 @@
         <!-- <li class="reviews__item"></li>
         <li class="reviews__item"></li> -->
       </ul>
-      <input id="nikolay-petrov" class="visually-hidden" type="radio" name="review-toggle" value="nikolay-petrov" checked>
-      <!-- <input id="" class="visually-hidden" type="radio" name="review-toggle" value="">
-      <input id="" class="visually-hidden" type="radio" name="review-toggle" value=""> -->
-      <div class="reviews__controls">
-        <label for="nikolay-petrov">
-          <span class="visually-hidden">Николай Петров</span>
+    </section>
+    <section class="prices">
+      <h2 class="visually-hidden">Пакеты услуг</h2>
+      <input id="base" class="visually-hidden" type="radio" name="price-toggle" value="base">
+      <input id="standart" class="visually-hidden" type="radio" name="price-toggle" value="standart" checked>
+      <input id="unlim" class="visually-hidden" type="radio" name="price-toggle" value="unlim">
+      <div class="prices__controls">
+        <label for="base">
+          <span class="visually-hidden">Базовый</span>
         </label>
-        <!-- <label for="">
-          <span class="visually-hidden"></span>
+        <label for="standart">
+          <span class="visually-hidden">Стандартный</span>
         </label>
-        <label for="">
-          <span class="visually-hidden"></span>
-        </label> -->
+        <label for="unlim">
+          <span class="visually-hidden">Безлимитный</span>
+        </label>
       </div>
-    </div>
-    <div class="prices">
       <ul class="prices__list">
         <li class="prices__item">
           <div class="prices__title-wrapper">
@@ -156,21 +172,7 @@
           </div>
         </li>
       </ul>
-      <input id="base" class="visually-hidden" type="radio" name="price-toggle" value="base">
-      <input id="standart" class="visually-hidden" type="radio" name="price-toggle" value="standart" checked>
-      <input id="unlim" class="visually-hidden" type="radio" name="price-toggle" value="unlim">
-      <div class="prices__controls">
-        <label for="base">
-          <span class="visually-hidden">Базовый</span>
-        </label>
-        <label for="standart">
-          <span class="visually-hidden">Стандартный</span>
-        </label>
-        <label for="unlim">
-          <span class="visually-hidden">Безлимитный</span>
-        </label>
-      </div>
-    </div>
+    </section>
   </main>
   <footer footer--index>
     <b class="footer__contact-us">Остальсь вопросы? Свяжитесь с нами!</b>
