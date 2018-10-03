@@ -40,19 +40,19 @@
     </div>
     <form class="story-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="story-form__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-      <fieldset class="story-form__item">
+      <fieldset class="story-form__section">
         <legend class="story-form__title">
           <span class="visually-hidden">Ф.И.О.:</span>
         </legend>
-        <p class="story-form__surname">
+        <p class="story-form__item">
           <label for="surname" class="story-form__label">Фамилия</label>
           <input id="surname" class="story-form__input" type="text" placeholder="Укажите фамилию *" required>
         </p>
-        <p class="story-form__name">
+        <p class="story-form__item">
           <label for="name" class="story-form__label">Имя</label>
           <input id="name" class="story-form__input" type="text" placeholder="Укажите ваше имя *" required>
         </p>
-        <p class="story-form__patronymic">
+        <p class="story-form__item">
           <label for="patronymic" class="story-form__label">Отчество</label>
           <input id="patronymic" class="story-form__input" type="text" placeholder="Ну и отчество тоже">
         </p>
@@ -90,11 +90,11 @@
         <legend class="story-form__title">
           <span class="visually-hidden">Телефон и почта</span>
         </legend>
-        <p class="story-form__tel">
+        <p class="story-form__item">
           <label for="tel" class="story-form__label">Номер телефона</label>
           <input id="tel" class="story-form__input" type="text" placeholder="Номер, пожалуйста">
         </p>
-        <p class="story-form__email">
+        <p class="story-form__item">
           <label for="email" class="story-form__label">Адрес почты</label>
           <input id="email" class="story-form__input" type="text" placeholder="Введите почту *" required>
         </p>
@@ -116,11 +116,11 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="story-form__item">
+      <fieldset class="story-form__section">
         <legend class="story-form__title">
           <span class="visually-hidden">Введите комментарий</span>
         </legend>
-        <p class="story-form__comment">
+        <p class="story-form__item">
           <label for="multi-line-comment">Опишите ваши эмоции</label>
           <textarea id="multi-line-comment" class="story-form__textarea" name="letter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </p>
