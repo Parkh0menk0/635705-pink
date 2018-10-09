@@ -1,0 +1,25 @@
+.filter {
+  &__list {
+    .default-list();
+  }
+
+  &__item {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    &--crop {
+      background-image: url("@{img}icon-editor-crop.svg");
+    }
+
+    &--fill {
+      background-image: url("@{img}icon-editor-fill.svg");
+    }
+
+    &--contrast {
+      background-image: url("@{img}icon-editor-contrast.svg");
+    }
+  }
+}
