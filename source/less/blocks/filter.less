@@ -1,25 +1,23 @@
-.filter {
-  &__list {
-    .default-list();
+.filter__list {
+  .default-list();
+}
+
+.filter__item {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &--crop {
+    background-image: url("@{img}icon-editor-crop.svg");
   }
 
-  &__item {
-    display: block;
-    width: 44px;
-    height: 44px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  &--fill {
+    background-image: url("@{img}icon-editor-fill.svg");
+  }
 
-    &--crop {
-      background-image: url("@{img}icon-editor-crop.svg");
-    }
-
-    &--fill {
-      background-image: url("@{img}icon-editor-fill.svg");
-    }
-
-    &--contrast {
-      background-image: url("@{img}icon-editor-contrast.svg");
-    }
+  &--contrast {
+    background-image: url("@{img}icon-editor-contrast.svg");
   }
 }
