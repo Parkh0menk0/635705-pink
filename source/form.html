@@ -4,46 +4,51 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк - Конкурс</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="logo logo--main-header" href="index.html"></a>
-      <button class="button button--open" type="button" name="button">
+<body class="body form">
+  <header class="header form__header">
+    <div class="header__wrapper">
+      <a class="link link--logo" href="index.html">
+        <img class="logo logo--header" src="img/logo-pink-white-mobile.svg" alt="Пинк">
+      </a>
+      <button class="button header__button header__button--open" type="button" name="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <button class="button button--close" type="button" name="button">
+      <button class="button header__button header__button--close" type="button" name="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
     </div>
     <nav class="main-nav">
       <ul class="site-nav">
         <li class="site-nav__item">
-          <a href="index.html">Главная</a>
+          <a class="link site-nav__link" href="index.html">Главная</a>
         </li>
         <li class="site-nav__item">
-          <a href="photo.html">Фотографии</a>
+          <a class="link site-nav__link" href="photo.html">Фотографии</a>
         </li>
         <li class="site-nav__item">
-          <a>Конкурс</a>
+          <a class="link site-nav__link site-nav__link--active">Конкурс</a>
         </li>
         <li class="site-nav__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="link site-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main-form">
+  <main class="main form__main">
     <div class="page-header">
       <h1 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
+    <div class="intro">
+      <p class="intro__item">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+        бонусную карту! Пожалуйста, заполните форму ниже:</p>
+    </div>
     <form class="story-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="story-form__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <h2 class="visually-hidden">Форма</h2>
       <fieldset class="story-form__section">
-        <legend class="story-form__title">
-          <span class="visually-hidden">Ф.И.О.:</span>
-        </legend>
+        <legend class="visually-hidden">Ф.И.О.:</legend>
         <p class="story-form__item">
           <label for="surname" class="story-form__label">Фамилия</label>
           <input id="surname" class="story-form__input" type="text" placeholder="Укажите фамилию *" required>
@@ -57,39 +62,43 @@
           <input id="patronymic" class="story-form__input" type="text" placeholder="Ну и отчество тоже">
         </p>
       </fieldset>
-      <fieldset class="story-form__item achievements">
+      <fieldset class="story-form__section achievements">
         <legend class="story-form__title">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="achievements__list">
+        <ul class="story-form__list">
           <li class="achievements__item story-form__filter-option">
-            <input id="selfie" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="selfie" value="" checked>
+            <input id="selfie" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="selfie"
+              value="" checked>
             <label for="selfie">Сделал селфи с акулой</label>
           </li>
           <li class="achievements__item story-form__filter-option">
-            <input id="beach" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="beach" value="" checked>
+            <input id="beach" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="beach"
+              value="" checked>
             <label for="beach">Обгорел на пляже</label>
           </li>
           <li class="achievements__item story-form__filter-option">
-            <input id="chack" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="chack" value="">
+            <input id="chack" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="chack"
+              value="">
             <label for="chack">Видел Чака Норриса</label>
           </li>
           <li class="achievements__item story-form__filter-option">
-            <input id="souvenirs" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="souvenirs" value="">
+            <input id="souvenirs" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="souvenirs"
+              value="">
             <label for="souvenirs">Накупил сувениров</label>
           </li>
           <li class="achievements__item story-form__filter-option">
-            <input id="tower" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="tower" value="" checked>
+            <input id="tower" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="tower"
+              value="" checked>
             <label for="tower">Удержал башню</label>
           </li>
           <li class="achievements__item story-form__filter-option">
-            <input id="defeated" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="defeated" value="">
+            <input id="defeated" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="defeated"
+              value="">
             <label for="defeated">Разгромил отель</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="story-form__item ">
-        <legend class="story-form__title">
-          <span class="visually-hidden">Телефон и почта</span>
-        </legend>
+      <fieldset class="story-form__section">
+        <legend class="visually-hidden">Телефон и почта</legend>
         <p class="story-form__item">
           <label for="tel" class="story-form__label">Номер телефона</label>
           <input id="tel" class="story-form__input" type="tel" placeholder="Номер, пожалуйста">
@@ -99,15 +108,17 @@
           <input id="email" class="story-form__input" type="email" placeholder="Введите почту *" required>
         </p>
       </fieldset>
-      <fieldset class="story-form__item aplication">
+      <fieldset class="story-form__section aplication">
         <legend class="story-form__title">С каким приложением путешествовали?</legend>
-        <ul class="aplication__list">
+        <ul class="story-form__list">
           <li class="aplication__item story-form__filter-option">
-            <input id="ios" class="visually-hidden story-form__input story-form__radio" type="radio" name="os" value="iOS" checked>
+            <input id="ios" class="visually-hidden story-form__input story-form__radio" type="radio" name="os" value="iOS"
+              checked>
             <label for="ios">Pink для iOS</label>
           </li>
           <li class="aplication__item story-form__filter-option">
-            <input id="android" class="visually-hidden story-form__input story-form__radio" type="radio" name="os" value="Android">
+            <input id="android" class="visually-hidden story-form__input story-form__radio" type="radio" name="os"
+              value="Android">
             <label for="android">Pink на Android</label>
           </li>
           <li class="aplication__item story-form__filter-option">
@@ -117,9 +128,7 @@
         </ul>
       </fieldset>
       <fieldset class="story-form__section">
-        <legend class="story-form__title">
-          <span class="visually-hidden">Введите комментарий</span>
-        </legend>
+        <legend class="visually-hidden">Введите комментарий</legend>
         <p class="story-form__item">
           <label for="multi-line-comment">Опишите ваши эмоции</label>
           <textarea id="multi-line-comment" class="story-form__textarea" name="letter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -132,39 +141,42 @@
       </p>
     </form>
   </main>
-  <footer class="footer footer--inner-page">
-    <a class="logo logo--footer">Pink</a>
+  <footer class="footer form__footer">
+    <a class="link link--logo" href="index.html">
+      <img class="logo logo--footer" src="img/logo-pink-blue-mobile.svg" alt="Пинк">
+    </a>
     <div class="social">
-      <a class="social__item social__item--tw" href="#">
+      <a class="link social__item social__item--tw" href="#">
         <span class="visually-hidden">Твиттер</span>
       </a>
-      <a class="social__item social__item--fb" href="#">
+      <a class="link social__item social__item--fb" href="#">
         <span class="visually-hidden">Фейсбук</span>
       </a>
-      <a class="social__item social__item--yb" href="#">
+      <a class="link social__item social__item--yb" href="#">
         <span class="visually-hidden">Ютуб</span>
       </a>
     </div>
     <p class="footer__developed">
       Разработано &mdash;
-      <a href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">htmlacademy.ru</span>
       </a>
     </p>
   </footer>
 
-<section class="modal modal--valid">
-  <h3 class="modal__title">Ваша заявка отправлена</h3>
-  <p class="modal__content">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
-оповестим вас.</p>
-  <button class="modal__button" type="button" name="button">Закрыть окно</button>
-</section>
+  <section class="modal modal--valid">
+    <h3 class="modal__title">Ваша заявка отправлена</h3>
+    <p class="modal__content">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим
+      ее и
+      оповестим вас.</p>
+    <button class="modal__button" type="button" name="button">Закрыть окно</button>
+  </section>
 
-<section class="modal modal--invalid">
-  <h3 class="modal__title">Что-то пошло не так!</h3>
-  <p class="modal__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-  <button class="modal__button" type="button" name="button">Ок</button>
-</section>
+  <section class="modal modal--invalid">
+    <h3 class="modal__title">Что-то пошло не так!</h3>
+    <p class="modal__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal__button" type="button" name="button">Ок</button>
+  </section>
 
 </body>
 

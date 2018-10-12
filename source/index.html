@@ -4,67 +4,70 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк - Главная</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="logo logo--main-header">Pink</a>
-      <button class="button button--open" type="button" name="button">
+<body class="body index">
+  <header class="header index__header">
+    <div class="header__wrapper">
+      <img class="logo logo--header" src="img/logo-pink-white-mobile.svg" alt="Пинк">
+      <button class="button header__button header__button--open" type="button" name="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <button class="button button--close" type="button" name="button">
+      <button class="button header__button header__button--close" type="button" name="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
     </div>
     <nav class="main-nav">
       <ul class="site-nav">
         <li class="site-nav__item">
-          <a>Главная</a>
+          <a class="link site-nav__link site-nav__link--active">Главная</a>
         </li>
         <li class="site-nav__item">
-          <a href="photo.html">Фотографии</a>
+          <a class="link site-nav__link" href="photo.html">Фотографии</a>
         </li>
         <li class="site-nav__item">
-          <a href="form.html">Конкурс</a>
+          <a class="link site-nav__link" href="form.html">Конкурс</a>
         </li>
         <li class="site-nav__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="link site-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main-index">
+  <main class="main index__main">
     <div class="page-header">
       <h1 class="vissually-hidden">Мобильное приложение Пинк</h1>
-      <img src="http://placehold.it/150x100">
+      <img src="img/iphone-hand-mobile@1x.png" alt="Мобильное приложение Пинк">
     </div>
-    <div class="download">
-      <a class="download__link" href="https://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com">Скачать приложение</button>
-        <div class="download__os">
+    <section class="download">
+      <h2 class="vissually-hidden">Скачать мобильное приложение Пинк</h2>
+      <a class="link download__link" href="https://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com">Скачать приложение</a>
+        <ul class="download__os os">
           <li class="download__item">
-            <a class="download__link download__link--apple" href="#">
+            <a class="link os__link os__link--apple" href="#">
               <span class="visually-hidden">Эпл</span>
             </a>
           </li>
           <li class="download__item">
-            <a class="download__link download__link--android" href="#">
+            <a class="link os__link os__link--android" href="#">
               <span class="visually-hidden">Андроид</span>
             </a>
           </li>
           <li class="download__item">
-            <a class="download__link download__link--windows" href="#">
+            <a class="link os__link os__link--windows" href="#">
               <span class="visually-hidden">Виндовс</span>
             </a>
           </li>
-        </div>
+        </ul>
         <p class="download__for">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
+    <div class="preamble">
+      <p class="preamble__item">Устали от серости мегаполиса?</p>
+      <p class="preamble__item">Нам есть, что вам предложить!</p>
     </div>
-    <div class="intro">
-      <p class="intro__item">Устали от серости мегаполиса?</p>
-      <p class="intro__item">Нам есть, что вам предложить!</p>
-    </div>
-    <div class="advantages">
+    <section class="advantages">
+      <h2 class="vissually-hidden">Преимущества мобильного приложения Пинк</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
           <h3 class="advantages__title">Поднимает настроение</h3>
@@ -79,7 +82,7 @@
           <p class="advantages__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
-    </div>
+    </section>
     <section class="reviews slider">
       <h2 class="visually-hidden">Отзывы</h2>
       <input id="nikolay-petrov" class="visually-hidden" type="radio" name="review-toggle" value="nikolay-petrov" checked>
@@ -105,7 +108,7 @@
         <li class="reviews__item slider__item"></li> -->
       </ul>
     </section>
-    <section class="prices">
+    <section class="prices slider">
       <h2 class="visually-hidden">Пакеты услуг</h2>
       <input id="base" class="visually-hidden" type="radio" name="price-toggle" value="base">
       <input id="standart" class="visually-hidden" type="radio" name="price-toggle" value="standart" checked>
@@ -165,20 +168,23 @@
       </ul>
     </section>
   </main>
-  <footer class="footer footer--index">
+  <footer class="footer index__footer feedback">
     <b class="footer__contact-us">Остальсь вопросы? Свяжитесь с нами!</b>
-    <p class="footer__call-us">
+    <p class="footer__call-us feedback__item">
       Звоните:
-      <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+      <a class="link feedback__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
     </p>
-    <p class="footer__write-us">
+    <p class="footer__write-us feedback__item">
       Пишите:
-      <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <a class="link feedback__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </p>
-    <p class="footer__visit-us">
+    <p class="footer__visit-us feedback__item">
       Приезжайте в гости:
-      <a href="img/map.jpg">ул. Большая Конюшенная, 19/8</a>
+      <a class="link feedback__link" href="img/bg-map-mobile@1x.png">ул. Большая Конюшенная, 19/8</a>
     </p>
+    <div class="map">
+      <img class="map__img" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="ул. Большая Конюшенная, 19/8">
+    </div>
   </footer>
 </body>
 

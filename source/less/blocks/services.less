@@ -1,0 +1,20 @@
+.services {
+  .default-list();
+}
+
+.services__item {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+  text-align: left;
+
+  &--enabled {
+    background: url("@{img}icon-yes.svg") 75% 50% no-repeat;
+  }
+
+  &--disabled {
+    background: url("@{img}icon-no.svg") 75% 50% no-repeat;
+  }
+}
