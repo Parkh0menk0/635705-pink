@@ -1,13 +1,106 @@
 .header {
-  background-color: #283645;
+  position: relative;
+  background-color: @navy;
   font-family: inherit;
   font-size: 18px;
   font-weight: bold;
   line-height: 32px;
   color: #ffffff;
+  margin: 0 auto;
 }
 
-.header__wrapper {
+.header__navigation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   border-bottom: 1px solid #000001;
   padding: 0 20px;
+}
+
+.header__logo-link {
+  display: flex;
+  align-items: center;
+  height: 69px;
+}
+
+.header__button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+
+  &--open {
+    display: none;
+  }
+}
+
+.header__content {
+  background-color: @navy;
+  background-image: url("@{img}bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .header__logo-link {
+    height: 109px;
+  }
+
+  .header__content {
+    padding-top: 205px;
+
+    &--index {
+      background-image: url("@{img}iphone-hand-tablet@1x.png"),
+        url("@{img}bg-back-tablet@1x.jpg");
+      background-size: 700px 545px,
+        auto;
+      background-position: 0 100%;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-bottom: 120px;
+    }
+  }
+
+  .header__image {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__navigation {
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    height: 110px;
+    padding: 0 130px;
+    background-color: rgba(29, 38, 49, 0.5);
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__content {
+    padding-top: 225px;
+
+    &--index {
+      background-image: url("@{img}iphone-hand-desktop@1x.png"),
+        url("@{img}bg-back-desktop@1x.jpg");
+      background-size: 1050px 645px,
+        cover;
+      background-position: 100% 100%,
+        center;
+      padding-right: 120px;
+      padding-left: 120px;
+      padding-bottom: 130px;
+    }
+  }
 }

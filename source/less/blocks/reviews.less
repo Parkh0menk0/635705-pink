@@ -2,7 +2,7 @@
   background-color: #ffffff;
   font: inherit;
   color: inherit;
-  padding: 0 20px;
+  padding: 45px 20px;
 }
 
 .reviews__list {
@@ -10,12 +10,40 @@
 }
 
 .reviews__item {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
 .reviews__title {
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 18px;
   font-weight: bold;
   line-height: 10px;
   color: #000000;
+}
+
+.reviews__description {
+  display: none;
+}
+
+.reviews__comment {
+  margin: 0;
+  margin-bottom: 35px;
+  line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__description {
+    display: block;
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__description {
+    display: block;
+    order: 1;
+  }
 }

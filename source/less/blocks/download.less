@@ -1,9 +1,17 @@
 .download {
-  background-color: #283645;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: @navy;
   font: inherit;
   color: #ffffff;
-  padding: 0 20px;
-  text-align: center;
+  min-height: 270px;
+}
+
+.download__slogan {
+  display: none;
 }
 
 .download__link {
@@ -17,10 +25,44 @@
 
   &:hover {
     background-color: #ffffff;
-    color: #d22856;
+    color: @pink;
   }
 
   &:active {
-    color: rgba(210, 40, 86, 0.3);
+    color: lighten(@pink, 30%);
+  }
+}
+
+.download__for {
+  font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    background-color: transparent;
+    width: 302px;
+    height: 420px;
+  }
+
+  .download__slogan {
+    display: block;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+  }
+
+  .download__for {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download {
+    height: 520px;
+  }
+
+  .download__slogan {
+    font-size: 50px;
+    line-height: 60px;
   }
 }
