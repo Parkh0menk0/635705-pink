@@ -6,7 +6,9 @@
   font-weight: bold;
   line-height: 32px;
   color: #ffffff;
-  margin: 0 auto;
+  background-image: url("@{img}bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .header__navigation {
@@ -19,7 +21,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid #000001;
+  background-color: rgba(29, 38, 49, 0.5);
   padding: 0 20px;
 }
 
@@ -35,44 +37,57 @@
   background-color: transparent;
   border: none;
 
-  &--open {
+  &--close {
     display: none;
   }
 }
 
 .header__content {
-  background-color: @navy;
-  background-image: url("@{img}bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  &::before {
+    content: "";
+    display: block;
+    width: 258px;
+    height: 286px;
+    padding-top: 110px;
+    background-image: url("@{img}iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .header {
+    background-image: url("@{img}bg-back-tablet@1x.jpg");
+  }
+  
   .header__logo-link {
     height: 109px;
   }
 
   .header__content {
-    padding-top: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 600px;
+    position: relative;
 
-    &--index {
-      background-image: url("@{img}iphone-hand-tablet@1x.png"),
-        url("@{img}bg-back-tablet@1x.jpg");
-      background-size: 700px 545px,
-        auto;
-      background-position: 0 100%;
-      padding-right: 20px;
-      padding-left: 20px;
-      padding-bottom: 120px;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 700px;
+      height: 545px;
+      background-image: url("@{img}iphone-hand-tablet@1x.png");
     }
-  }
-
-  .header__image {
-    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .header {
+    background-image: url("@{img}bg-back-desktop@1x.jpg");
+  }
+
   .header__navigation {
     position: absolute;
     flex-direction: row;
@@ -89,18 +104,13 @@
   }
 
   .header__content {
-    padding-top: 225px;
-
-    &--index {
-      background-image: url("@{img}iphone-hand-desktop@1x.png"),
-        url("@{img}bg-back-desktop@1x.jpg");
-      background-size: 1050px 645px,
-        cover;
-      background-position: 100% 100%,
-        center;
-      padding-right: 120px;
-      padding-left: 120px;
-      padding-bottom: 130px;
+    min-height: 740px;
+  
+    &::before {
+      content: "";
+      width: 1050px;
+      height: 645px;
+      background-image: url("@{img}iphone-hand-desktop@1x.png");
     }
   }
 }

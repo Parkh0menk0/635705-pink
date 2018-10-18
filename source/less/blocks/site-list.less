@@ -1,5 +1,6 @@
 .site-list {
-  display: flex;
+  display: none;
+  // display: flex;
   flex-direction: column;
   .default-list();
 }
@@ -30,6 +31,7 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 622px;
