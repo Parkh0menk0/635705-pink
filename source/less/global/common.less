@@ -1,3 +1,21 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: @font;
+  color: @navy;
+  font-style: normal;
+
+  background-color: @bg-grey;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -16,4 +34,9 @@ input[type="radio"].visually-hidden {
   border: 0;
 
   clip-path: inset(100%);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

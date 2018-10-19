@@ -1,13 +1,20 @@
 .download {
+  background-color: #1d2631;
+  font-family: @font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.download__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-  background-color: @navy;
-  font: inherit;
-  color: #ffffff;
   min-height: 270px;
+  padding: 28px 0;
 }
 
 .download__slogan {
@@ -37,11 +44,15 @@
   font-weight: 300;
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
   .download {
     background-color: transparent;
-    width: 302px;
-    height: 420px;
+  }
+
+  .download__wrapper {
+    min-height: 420px;
+    max-width: 300px;
+    padding: 0;
   }
 
   .download__slogan {
@@ -56,9 +67,9 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .download {
-    height: 520px;
+@media @desktop-width {
+  .download__wrapper {
+    min-height: 520px;
   }
 
   .download__slogan {
