@@ -11,45 +11,44 @@
 </head>
 
 <body class="form">
-  <header class="header form__header">
-    <div class="header__navigation">
-      <div class="header__logo">
-        <a class="header__logo-link" href="index.html">
-          <picture>
-            <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
-            <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
-            <img class="logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-          </picture>
-        </a>
-        <button class="button header__button header__button--open" type="button" name="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <img class="menu-burger" src="img/icon-menu-burger.svg" width="50" height="24" alt="Открыть меню">
-        </button>
-        <button class="button header__button header__button--close" type="button" name="button">
-          <span class="visually-hidden">Закрыть меню</span>
-          <img class="menu-cross" src="img/icon-menu-cross.svg" width="24" height="23" alt="Закрыть меню">
-        </button>
+  <header class="header index__header">
+    <nav class="header__navigation">
+      <div class="header__top header__top--open">
+        <div class="header__wrapper">
+          <a class="logo header__logo">
+            <picture>
+              <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
+              <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+              <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Пинк">
+            </picture>
+          </a>
+          <button class="button header__button header__button--open" type="button" name="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <img class="menu-burger" src="img/icon-menu-burger.svg" width="50" height="24" alt="Открыть меню">
+          </button>
+          <button class="button header__button header__button--close" type="button" name="button">
+            <span class="visually-hidden">Закрыть меню</span>
+            <img class="menu-cross" src="img/icon-menu-cross.svg" width="24" height="23" alt="Закрыть меню">
+          </button>
+        </div>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__content header__content--inner-page">
-      <h1 class="header__title header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </div>
+      <ul class="header__menu site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+      <div class="header__content header__content--inner-page">
+        <h1 class="header__title header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
   </header>
   <main class="main form__main">
     <div class="intro">
@@ -155,26 +154,28 @@
     </form>
   </main>
   <footer class="footer form__footer">
-    <a class="link--logo" href="index.html">
-      <img class="logo logo--footer" src="img/logo-pink-blue-mobile.svg" alt="Пинк">
-    </a>
-    <div class="social">
-      <a class="social__item social__item--tw" href="#">
-        <span class="visually-hidden">Твиттер</span>
+    <div class="footer__wrapper">
+      <a class="link--logo" href="index.html">
+        <img class="logo logo--footer" src="img/logo-pink-blue-mobile.svg" alt="Пинк">
       </a>
-      <a class="social__item social__item--fb" href="#">
-        <span class="visually-hidden">Фейсбук</span>
-      </a>
-      <a class="social__item social__item--yb" href="#">
-        <span class="visually-hidden">Ютуб</span>
-      </a>
+      <div class="social">
+        <a class="social__item social__item--tw" href="#">
+          <span class="visually-hidden">Твиттер</span>
+        </a>
+        <a class="social__item social__item--fb" href="#">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+        <a class="social__item social__item--yb" href="#">
+          <span class="visually-hidden">Ютуб</span>
+        </a>
+      </div>
+      <p class="footer__developed">
+        Разработано
+        <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">htmlacademy.ru</span>
+        </a>
+      </p>
     </div>
-    <p class="footer__developed">
-      Разработано &mdash;
-      <a class="link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">htmlacademy.ru</span>
-      </a>
-    </p>
   </footer>
 
   <section class="modal modal--valid">
