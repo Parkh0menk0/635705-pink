@@ -1,7 +1,7 @@
 .preamble {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   background-color: #ffffff;
   min-height: 215px;
@@ -16,7 +16,7 @@
   color: @navy;
 }
 
-@media (min-width: @tablet-width) {
+@media @tablet-width {
   .preamble {
     justify-content: center;
     text-align: center;
@@ -34,7 +34,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media @desktop-width {
   .preamble {
     min-height: 325px;
   }
