@@ -12,62 +12,62 @@
 
 <body class="index">
   <header class="header index__header">
-    <div class="header__navigation">
-      <div class="header__logo">
-        <a class="link header__logo-link">
-          <picture>
-            <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
-            <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
-            <img class="logo" src="img/logo-pink-white-mobile.svg" alt="Пинк">
-          </picture>
-        </a>
-        <button class="button header__button header__button--open" type="button" name="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <img class="menu-burger" src="img/icon-menu-burger.svg" width="50" height="24" alt="Открыть меню">
-        </button>
-        <button class="button header__button header__button--close" type="button" name="button">
-          <span class="visually-hidden">Закрыть меню</span>
-          <img class="menu-cross" src="img/icon-menu-cross.svg" width="24" height="23" alt="Закрыть меню">
-        </button>
+    <nav class="header__navigation">
+      <div class="header__top header__top--open">
+        <div class="header__wrapper">
+          <a class="logo header__logo">
+            <picture>
+              <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
+              <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+              <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Пинк">
+            </picture>
+          </a>
+          <button class="button header__button header__button--open" type="button" name="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <img class="menu-burger" src="img/icon-menu-burger.svg" width="50" height="24" alt="Открыть меню">
+          </button>
+          <button class="button header__button header__button--close" type="button" name="button">
+            <span class="visually-hidden">Закрыть меню</span>
+            <img class="menu-cross" src="img/icon-menu-cross.svg" width="24" height="23" alt="Закрыть меню">
+          </button>
+        </div>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="link site-list__link">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="link site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="link site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="link site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="header__menu site-list">
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
     <div class="header__content header__content--index">
       <h1 class="visually-hidden">Мобильное приложение Пинк</h1>
       <section class="download">
         <div class="download__wrapper">
           <h2 class="visually-hidden">Скачать мобильное приложение Пинк</h2>
           <b class="download__slogan">Взгляните на жизнь иначе!</b>
-          <a class="link download__link" href="https://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com">Скачать
+          <a class="download__link" href="https://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com">Скачать
             приложение</a>
           <ul class="download__os os">
             <li class="download__item">
-              <a class="link os__link os__link--apple" href="#">
+              <a class="os__link os__link--apple" href="#">
                 <span class="visually-hidden">Эпл</span>
               </a>
             </li>
             <li class="download__item">
-              <a class="link os__link os__link--android" href="#">
+              <a class="os__link os__link--android" href="#">
                 <span class="visually-hidden">Андроид</span>
               </a>
             </li>
             <li class="download__item">
-              <a class="link os__link os__link--windows" href="#">
+              <a class="os__link os__link--windows" href="#">
                 <span class="visually-hidden">Виндовс</span>
               </a>
             </li>
@@ -212,15 +212,15 @@
         <b class="feedback__contact-us">Остальсь вопросы? Свяжитесь с нами!</b>
         <p class="feedback__item feedback__item--call-us ">
           Звоните:
-          <a class="link feedback__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          <a class="feedback__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </p>
         <p class="feedback__item feedback__item--write-us">
           Пишите:
-          <a class="link feedback__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="feedback__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="feedback__item feedback__item--visit-us">
           Приезжайте в гости:
-          <a class="link feedback__link" href="img/bg-map-mobile@1x.png">ул. Большая Конюшенная, 19/8</a>
+          <a class="feedback__link" href="img/bg-map-mobile@1x.png">ул. Большая Конюшенная, 19/8</a>
         </p>
       </div>
       <div class="map">

@@ -1,7 +1,5 @@
 .site-list {
-  display: none;
-  // display: flex;
-  flex-direction: column;
+  background-color: @navy;
   .default-list();
 }
 
@@ -17,6 +15,13 @@
 }
 
 .site-list__link {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  
   &:hover {
     color: @pink;
   }
@@ -31,11 +36,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 622px;
+    background-color: transparent;
   }
 
   .site-list__item {
     border: none;
     font-weight: normal;
+  }
+
+  .site-list__link {
+    text-transform: none;
+    font-weight: normal;
+    line-height: 18px;
   }
 }

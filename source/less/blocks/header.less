@@ -17,14 +17,27 @@
   width: 100%;
 }
 
-.header__logo {
+.header__wrapper {
+  .wrapper();
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgba(29, 38, 49, 0.5);
+  
+  &--open {
+    background-color: @navy;
+  }
+
+  &--close {
+    background-color: rgba(29, 38, 49, 0.5);
+  }
 }
 
-.header__logo-link {
+.header__logo {
   display: flex;
   align-items: center;
   height: 69px;
@@ -39,6 +52,10 @@
   &--close {
     display: none;
   }
+}
+
+.header__menu {
+  width: 100%;
 }
 
 .header__content {
@@ -59,7 +76,7 @@
     background-image: url("@{img}bg-back-tablet@1x.jpg");
   }
   
-  .header__logo-link {
+  .header__logo {
     height: 109px;
   }
 
@@ -88,13 +105,25 @@
   }
 
   .header__navigation {
-    position: absolute;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 940px;
     height: 110px;
     background-color: rgba(29, 38, 49, 0.5);
+    .wrapper();
+  }
+
+  .header__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+ }
+
+  .header__top {
+    &--open {
+      background-color: rgba(29, 38, 49, 0.5);
+    }
   }
 
   .header__button {
