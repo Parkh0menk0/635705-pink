@@ -58,98 +58,100 @@
     </div>
     <form class="story-form" action="https://echo.htmlacademy.ru" method="post">
       <h2 class="visually-hidden">Форма</h2>
-      <fieldset class="story-form__section">
-        <legend class="visually-hidden">Ф.И.О.:</legend>
-        <p class="story-form__item">
-          <label for="surname" class="story-form__label">Фамилия</label>
-          <input id="surname" class="story-form__input" type="text" placeholder="Укажите фамилию *" required>
+      <div class="story-form__wrapper">
+        <fieldset class="story-form__section">
+          <legend class="visually-hidden">Ф.И.О.:</legend>
+          <p class="story-form__item">
+            <label for="surname" class="story-form__label">Фамилия</label>
+            <input id="surname" class="story-form__input" type="text" placeholder="Укажите фамилию *" required>
+          </p>
+          <p class="story-form__item">
+            <label for="name" class="story-form__label">Имя</label>
+            <input id="name" class="story-form__input" type="text" placeholder="Укажите ваше имя *" required>
+          </p>
+          <p class="story-form__item">
+            <label for="patronymic" class="story-form__label">Отчество</label>
+            <input id="patronymic" class="story-form__input" type="text" placeholder="Ну и отчество тоже">
+          </p>
+        </fieldset>
+        <fieldset class="story-form__section achievements">
+          <legend class="story-form__title">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="story-form__list">
+            <li class="achievements__item story-form__filter-option">
+              <input id="selfie" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="selfie"
+                value="" checked>
+              <label for="selfie">Сделал селфи с акулой</label>
+            </li>
+            <li class="achievements__item story-form__filter-option">
+              <input id="beach" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="beach"
+                value="" checked>
+              <label for="beach">Обгорел на пляже</label>
+            </li>
+            <li class="achievements__item story-form__filter-option">
+              <input id="chack" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="chack"
+                value="">
+              <label for="chack">Видел Чака Норриса</label>
+            </li>
+            <li class="achievements__item story-form__filter-option">
+              <input id="souvenirs" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="souvenirs"
+                value="">
+              <label for="souvenirs">Накупил сувениров</label>
+            </li>
+            <li class="achievements__item story-form__filter-option">
+              <input id="tower" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="tower"
+                value="" checked>
+              <label for="tower">Удержал башню</label>
+            </li>
+            <li class="achievements__item story-form__filter-option">
+              <input id="defeated" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="defeated"
+                value="">
+              <label for="defeated">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="story-form__section">
+          <legend class="visually-hidden">Телефон и почта</legend>
+          <p class="story-form__item">
+            <label for="tel" class="story-form__label">Номер телефона</label>
+            <input id="tel" class="story-form__input" type="tel" placeholder="Номер, пожалуйста">
+          </p>
+          <p class="story-form__item">
+            <label for="email" class="story-form__label">Адрес почты</label>
+            <input id="email" class="story-form__input" type="email" placeholder="Введите почту *" required>
+          </p>
+        </fieldset>
+        <fieldset class="story-form__section aplication">
+          <legend class="story-form__title">С каким приложением путешествовали?</legend>
+          <ul class="story-form__list">
+            <li class="aplication__item story-form__filter-option">
+              <input id="ios" class="visually-hidden story-form__input story-form__radio" type="radio" name="os" value="iOS"
+                checked>
+              <label for="ios">Pink для iOS</label>
+            </li>
+            <li class="aplication__item story-form__filter-option">
+              <input id="android" class="visually-hidden story-form__input story-form__radio" type="radio" name="os"
+                value="Android">
+              <label for="android">Pink на Android</label>
+            </li>
+            <li class="aplication__item story-form__filter-option">
+              <input id="wp" class="visually-hidden story-form__input story-form__radio" type="radio" name="os" value="WidowsPhone">
+              <label for="wp">Widows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="story-form__section">
+          <legend class="visually-hidden">Введите комментарий</legend>
+          <p class="story-form__item">
+            <label for="multi-line-comment">Опишите ваши эмоции</label>
+            <textarea id="multi-line-comment" class="story-form__textarea" name="letter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </p>
+        </fieldset>
+        <button class="button story-form__button" type="submit" name="button">Отправить форму</button>
+        <p>
+          <span class="required">*</span>
+          &mdash; обязательные поля
         </p>
-        <p class="story-form__item">
-          <label for="name" class="story-form__label">Имя</label>
-          <input id="name" class="story-form__input" type="text" placeholder="Укажите ваше имя *" required>
-        </p>
-        <p class="story-form__item">
-          <label for="patronymic" class="story-form__label">Отчество</label>
-          <input id="patronymic" class="story-form__input" type="text" placeholder="Ну и отчество тоже">
-        </p>
-      </fieldset>
-      <fieldset class="story-form__section achievements">
-        <legend class="story-form__title">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="story-form__list">
-          <li class="achievements__item story-form__filter-option">
-            <input id="selfie" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="selfie"
-              value="" checked>
-            <label for="selfie">Сделал селфи с акулой</label>
-          </li>
-          <li class="achievements__item story-form__filter-option">
-            <input id="beach" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="beach"
-              value="" checked>
-            <label for="beach">Обгорел на пляже</label>
-          </li>
-          <li class="achievements__item story-form__filter-option">
-            <input id="chack" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="chack"
-              value="">
-            <label for="chack">Видел Чака Норриса</label>
-          </li>
-          <li class="achievements__item story-form__filter-option">
-            <input id="souvenirs" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="souvenirs"
-              value="">
-            <label for="souvenirs">Накупил сувениров</label>
-          </li>
-          <li class="achievements__item story-form__filter-option">
-            <input id="tower" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="tower"
-              value="" checked>
-            <label for="tower">Удержал башню</label>
-          </li>
-          <li class="achievements__item story-form__filter-option">
-            <input id="defeated" class="visually-hidden story-form__input story-form__checkbox" type="checkbox" name="defeated"
-              value="">
-            <label for="defeated">Разгромил отель</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="story-form__section">
-        <legend class="visually-hidden">Телефон и почта</legend>
-        <p class="story-form__item">
-          <label for="tel" class="story-form__label">Номер телефона</label>
-          <input id="tel" class="story-form__input" type="tel" placeholder="Номер, пожалуйста">
-        </p>
-        <p class="story-form__item">
-          <label for="email" class="story-form__label">Адрес почты</label>
-          <input id="email" class="story-form__input" type="email" placeholder="Введите почту *" required>
-        </p>
-      </fieldset>
-      <fieldset class="story-form__section aplication">
-        <legend class="story-form__title">С каким приложением путешествовали?</legend>
-        <ul class="story-form__list">
-          <li class="aplication__item story-form__filter-option">
-            <input id="ios" class="visually-hidden story-form__input story-form__radio" type="radio" name="os" value="iOS"
-              checked>
-            <label for="ios">Pink для iOS</label>
-          </li>
-          <li class="aplication__item story-form__filter-option">
-            <input id="android" class="visually-hidden story-form__input story-form__radio" type="radio" name="os"
-              value="Android">
-            <label for="android">Pink на Android</label>
-          </li>
-          <li class="aplication__item story-form__filter-option">
-            <input id="wp" class="visually-hidden story-form__input story-form__radio" type="radio" name="os" value="WidowsPhone">
-            <label for="wp">Widows Phone</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="story-form__section">
-        <legend class="visually-hidden">Введите комментарий</legend>
-        <p class="story-form__item">
-          <label for="multi-line-comment">Опишите ваши эмоции</label>
-          <textarea id="multi-line-comment" class="story-form__textarea" name="letter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </p>
-      </fieldset>
-      <button class="button story-form__button" type="submit" name="button">Отправить форму</button>
-      <p>
-        <span class="required">*</span>
-        &mdash; обязательные поля
-      </p>
+      </div>
     </form>
   </main>
   <footer class="footer form__footer">

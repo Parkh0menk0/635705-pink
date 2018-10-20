@@ -113,15 +113,19 @@
     </section>
     <section class="reviews slider">
       <h2 class="visually-hidden">Отзывы</h2>
-      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-      <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+      <input class="visually-hidden" type="radio" id="comment-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="comment-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="comment-3" name="toggle">
       <div class="reviews__controls slider__controls">
-        <i class="slider__label slider__label--active">
+        <label class="slider__label slider__label--1" for="comment-1">
           <span class="visually-hidden">Николай Петров</span>
-        </i>
-        <i class="slider__label"></i>
-        <i class="slider__label"></i>
+        </label>
+        <label class="slider__label slider__label--2" for="comment-2">
+          <span class="visually-hidden">Николай Петров</span>
+        </label>
+        <label class="slider__label slider__label--3" for="comment-3">
+          <span class="visually-hidden">Николай Петров</span>
+        </label>
       </div>
       <ul class="reviews__list slider__list">
         <li class="reviews__item slider__item">
@@ -132,11 +136,13 @@
         </li>
         <li class="reviews__item slider__item">
           <h3 class="reviews__title">Николай Петров</h3>
+          <p class="reviews__description">25 лет, водитель трамвая</p>
           <p class="reviews__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </li>
         <li class="reviews__item slider__item">
           <h3 class="reviews__title">Николай Петров</h3>
+          <p class="reviews__description">25 лет, водитель трамвая</p>
           <p class="reviews__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </li>
@@ -144,16 +150,19 @@
     </section>
     <section class="prices slider">
       <h2 class="visually-hidden">Пакеты услуг</h2>
+      <input class="visually-hidden" type="radio" id="price-list-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="price-list-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="price-list-3" name="toggle">
       <div class="prices__controls slider__controls">
-        <i class="slider__label">
+        <label class="slider__label slider__label--1" for="price-list-1">
           <span class="visually-hidden">Базовый</span>
-        </i>
-        <i class="slider__label slider__label--active">
+        </label>
+        <label class="slider__label slider__label--2" for="price-list-2">
           <span class="visually-hidden">Стандартный</span>
-        </i>
-        <i class="slider__label">
+        </label>
+        <label class="slider__label slider__label--3" for="price-list-3">
           <span class="visually-hidden">Безлимитный</span>
-        </i>
+        </label>
       </div>
       <ul class="prices__list slider__list">
         <li class="prices__item slider__item">
@@ -198,25 +207,32 @@
         </li>
       </ul>
     </section>
+    <section class="feedback">
+      <div class="feedback__wrapper">
+        <b class="feedback__contact-us">Остальсь вопросы? Свяжитесь с нами!</b>
+        <p class="feedback__item feedback__item--call-us ">
+          Звоните:
+          <a class="link feedback__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </p>
+        <p class="feedback__item feedback__item--write-us">
+          Пишите:
+          <a class="link feedback__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <p class="feedback__item feedback__item--visit-us">
+          Приезжайте в гости:
+          <a class="link feedback__link" href="img/bg-map-mobile@1x.png">ул. Большая Конюшенная, 19/8</a>
+        </p>
+      </div>
+      <div class="map">
+        <picture>
+          <source srcset="img/bg-map-desktop@1x.jpg" media="(min-width: 1200px)">
+          <source srcset="img/bg-map-tablet@1x.jpg" media="(min-width: 660px)">
+          <img class="map__img" src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, 19/8">
+        </picture>
+      </div>
+    </section>
   </main>
-  <footer class="footer index__footer feedback">
-    <b class="footer__contact-us">Остальсь вопросы? Свяжитесь с нами!</b>
-    <p class="footer__call-us feedback__item">
-      Звоните:
-      <a class="link feedback__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-    </p>
-    <p class="footer__write-us feedback__item">
-      Пишите:
-      <a class="link feedback__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    </p>
-    <p class="footer__visit-us feedback__item">
-      Приезжайте в гости:
-      <a class="link feedback__link" href="img/bg-map-mobile@1x.png">ул. Большая Конюшенная, 19/8</a>
-    </p>
-    <div class="map">
-      <img class="map__img" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="ул. Большая Конюшенная, 19/8">
-    </div>
-  </footer>
+  <footer class="footer index__footer"></footer>
 </body>
 
 </html>
