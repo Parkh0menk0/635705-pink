@@ -1,6 +1,9 @@
 .intro {
-  padding: 0 20px;
-  background-color: @bg-grey;
+  display: flex;
+  margin: auto;
+  .wrapper();
+  background-color: #ffffff;
+  min-height: 184px;
 }
 
 .intro__item {
@@ -9,4 +12,40 @@
   line-height: 30px;
   color: @navy;
   text-align: center;
+}
+
+@media @tablet-width {
+  .intro {
+    min-height: 228px;
+  }
+
+  .intro__item {
+    font-size: 18px;
+    color: @navy;
+    text-align: center;
+
+    &--photo {
+      max-width: 440px;
+    }
+  
+    &--form {
+      max-width: 500px;
+    }
+  }
+}
+
+@media @desktop-width {
+  .intro {
+    min-height: 240px;
+  }
+
+  .intro__item {
+    &--photo {
+      max-width: 580px;
+    }
+  
+    &--form {
+      max-width: 760px;
+    }
+  }
 }
