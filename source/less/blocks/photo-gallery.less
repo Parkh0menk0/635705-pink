@@ -2,7 +2,7 @@
   background-color: #ffffff;
   font-family: @font;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: normal;
   color: @navy;
 }
@@ -14,9 +14,8 @@
 }
 
 .photo-gallery__item {
-  display: flex;
-  flex-direction: column;
   background-color: @bg-grey;
+  margin-bottom: 20px;
 
   &--panorama {
     position: relative;
@@ -24,54 +23,187 @@
 }
 
 .photo-gallery__img {
-  width: 100vw;
-  
+  width: 100%;
+
   &--panorama {
     position: relative;
-    width: 100vw + 40px;
+    width: calc(100% + 40px);
     left: -20px;
+  }
+  
+  &--heart {
+    color: @pink;
+    width: 14px;
+    height: 12px;
   }
 }
 
-// .photo-gallery__title {
-//   display: block;
-//   position: absolute;
-//   background-color: @pink;
-//   font-weight: bold;
-//   text-transform: uppercase;
-//   color: #ffffff;
-//   margin: 0;
-//   right: 20px;
-// }
+.photo-gallery__content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 22px 18px;
+}
 
-// .photo-gallery__content {
-//   padding: 20px 15px;
-//   background-color: @bg-grey;
-// }
+.photo-gallery__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: @pink;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  right: 0;
+  z-index: 10;
+  width: 140px;
+  height: 36px;
+}
 
-// .photo-gallery__author {
-//   font-weight: bold;
-// }
+.photo-gallery__author {
+  margin: 0;
+  font-weight: bold;
+}
 
-// .photo-gallery__time {
-//   font-weight: normal;
-//   text-transform: uppercase;
-//   font-size: 12px;
-// }
+.photo-gallery__time {
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 12px;
+}
 
-// .photo-gallery__comment {
-//   margin: 0;
-// }
+.photo-gallery__comment {
+  margin: 0;
+  margin-bottom: 7px;
+  width: 100%;
+}
 
-// .photo-gallery__likes {
-//   font-weight: normal;
-//   text-transform: uppercase;
-//   font-size: 12px;
-//   color: @pink;
-// }
+.photo-gallery__likes {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
 
-// .photo-gallery__like-count-btn {
-//   border: none;
-//   background-color: transparent;
-//   cursor: pointer;
-// }
+.photo-gallery__button {
+  padding: 0;
+  margin-right: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 14px;
+  height: 12px;
+}
+
+.photo-gallery__likes-count {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: @pink;
+}
+
+@media @tablet-width {
+  .photo-gallery__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .photo-gallery__item {
+    margin-bottom: 0;
+    margin-right: 20px;
+  
+    &:not(.photo-gallery__item--panorama) {
+      margin-top: 20px;
+      flex-basis: 300px;
+      flex-grow: 1;
+    }
+  
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+  }
+
+  .photo-gallery__content {
+    padding: 28px;
+  
+    &--panorama {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .photo-gallery__author {
+  
+    &--panorama {
+      order: 1;
+      flex-grow: 1;
+    }
+  }
+
+  .photo-gallery__comment {
+    &--panorama {
+      order: 3;
+      margin-bottom: 0;
+    }
+  } 
+  
+  .photo-gallery__likes {
+
+    &--panorama {
+      order: 2;
+    }
+  }
+  
+  .photo-gallery__title {
+    margin-top: 57px;
+  }
+
+  .photo-gallery__likes {
+    justify-content: space-between;
+  }
+
+  .photo-gallery__button {
+    order: 2;
+
+    &--panorama {
+      margin-right: 0;
+    }
+  }
+  
+  .photo-gallery__likes-count {
+    order: 1;
+
+    &--panorama {
+      padding-right: 19px;
+    }
+  }
+}
+
+@media @desktop-width {
+  .photo-gallery__item {
+    &:not(.photo-gallery__item--panorama) {
+      margin-top: 40px;
+    }
+  
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+  
+    &:nth-child(3n+1) {
+      margin-right: 0;
+    }
+  }
+
+  .photo-gallery__title {
+    margin-top: 54px;
+  }
+
+  .photo-gallery__img {
+    &--panorama {
+      width: calc(100% + 20px);
+      left: -10px;
+    }
+  }
+}

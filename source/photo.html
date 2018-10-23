@@ -16,7 +16,7 @@
         <div class="header__wrapper">
           <a class="logo header__logo">
             <picture>
-              <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
+              <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
               <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
               <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Пинк">
             </picture>
@@ -61,180 +61,160 @@
         <article class="photo-gallery__item  photo-gallery__item--panorama">
           <h3 class="photo-gallery__title">Панорама дня</h3>
           <picture>
-            <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)">
             <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
             <img class="photo-gallery__img  photo-gallery__img--panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама">
           </picture>
-          <strong class="photo-gallery__author">Анна</strong>
-          <i class="photo-gallery__time">(5 минут назад)</i>
-          <p class="photo-gallery__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
-            трансляцию в перископе, задавайте свои вопросы!</p>
-          <button class="photo-gallery__like-count-btn" type="button" name="button">
-            <img src="img/icon-heart.svg" alt="Нравится">
-          </button>
-          <b class="photo-gallery__likes">Нравится: 215</b>
+          <div class="photo-gallery__content  photo-gallery__content--panorama">
+            <p class="photo-gallery__author  photo-gallery__author--panorama">Анна
+              <i class="photo-gallery__time">(5 минут назад)</i>
+            </p>
+            <p class="photo-gallery__comment  photo-gallery__comment--panorama">Прыгать или нет? Напишите в коментарии
+              свой совет и смотрите прямую
+              трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="photo-gallery__likes  photo-gallery__likes--panorama">
+              <button class="photo-gallery__button  photo-gallery__button--panorama" type="button" name="button">
+                <img class="photo-gallery__img  photo-gallery__img--heart" src="img/icon-heart.svg" width="14" height="12"
+                  alt="Нравится">
+              </button>
+              <b class="photo-gallery__likes-count  photo-gallery__likes-count--panorama">Нравится: 215</b>
+            </div>
+          </div>
         </article>
         <article class="photo-gallery__item">
           <picture>
-            <source srcset="img/photo-car-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo-car-desktop@1x.jpg" media="(min-width: 960px)">
             <source srcset="img/photo-car-tablet@1x.jpg" media="(min-width: 660px)">
             <img class="photo-gallery__img  photo-gallery__img--car" src="img/photo-car-mobile@1x.jpg" alt="Автомобиль">
           </picture>
-          <strong class="photo-gallery__author">Левон</strong>
-          <i class="photo-gallery__time">(5 часов назад)</i>
-          <p class="photo-gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <button class="photo-gallery__like-count-btn" type="button" name="button">
-            <img src="img/icon-heart.svg" alt="Нравится">
-          </button>
-          <b class="photo-gallery__likes">Нравится: 356</b>
+          <div class="photo-gallery__content">
+            <p class="photo-gallery__author">Левон
+              <i class="photo-gallery__time">(5 часов назад)</i>
+            </p>
+            <p class="photo-gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="photo-gallery__likes">
+              <button class="photo-gallery__button" type="button" name="button">
+                <img class="photo-gallery__img  photo-gallery__img--heart" src="img/icon-heart.svg" width="14" height="12"
+                  alt="Нравится">
+              </button>
+              <b class="photo-gallery__likes-count">Нравится: 356</b>
+            </div>
+          </div>
         </article>
         <article class="photo-gallery__item">
           <picture>
-            <source srcset="img/photo-drumset-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo-drumset-desktop@1x.jpg" media="(min-width: 960px)">
             <source srcset="img/photo-drumset-tablet@1x.jpg" media="(min-width: 660px)">
             <img class="photo-gallery__img  photo-gallery__img--drumset" src="img/photo-drumset-mobile@1x.jpg" alt="Барабан">
           </picture>
-          <strong class="photo-gallery__author">Антон</strong>
-          <i class="photo-gallery__time">(12 часов назад)</i>
-          <p class="photo-gallery__comment">Соседи будут рады!</p>
-          <button class="photo-gallery__like-count-btn" type="button" name="button">
-            <img src="img/icon-heart.svg" alt="Нравится">
-          </button>
-          <b class="photo-gallery__likes">Нравится: 666</b>
+          <div class="photo-gallery__content">
+            <p class="photo-gallery__author">Антон
+              <i class="photo-gallery__time">(12 часов назад)</i>
+            </p>
+            <p class="photo-gallery__comment">Соседи будут рады!</p>
+            <div class="photo-gallery__likes">
+              <button class="photo-gallery__button" type="button" name="button">
+                <img class="photo-gallery__img  photo-gallery__img--heart" src="img/icon-heart.svg" width="14" height="12"
+                  alt="Нравится">
+              </button>
+              <b class="photo-gallery__likes-count">Нравится: 666</b>
+            </div>
+          </div>
         </article>
         <article class="photo-gallery__item">
           <picture>
-            <source srcset="img/photo-window-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo-window-desktop@1x.jpg" media="(min-width: 960px)">
             <source srcset="img/photo-window-tablet@1x.jpg" media="(min-width: 660px)">
             <img class="photo-gallery__img  photo-gallery__img--window" src="img/photo-window-mobile@1x.jpg" alt="Витрина">
           </picture>
-          <strong class="photo-gallery__author">Борис</strong>
-          <i class="photo-gallery__time">(20 часов назад)</i>
-          <p class="photo-gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <button class="photo-gallery__like-count-btn" type="button" name="button">
-            <img src="img/icon-heart.svg" alt="Нравится">
-          </button>
-          <b class="photo-gallery__likes">Нравится: 215</b>
+          <div class="photo-gallery__content">
+            <p class="photo-gallery__author">Борис
+              <i class="photo-gallery__time">(20 часов назад)</i>
+            </p>
+            <p class="photo-gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="photo-gallery__likes">
+              <button class="photo-gallery__button" type="button" name="button">
+                <img class="photo-gallery__img  photo-gallery__img--heart" src="img/icon-heart.svg" width="14" height="12"
+                  alt="Нравится">
+              </button>
+              <b class="photo-gallery__likes-count">Нравится: 215</b>
+            </div>
+          </div>
         </article>
         <article class="photo-gallery__item">
           <picture>
-            <source srcset="img/photo-fair-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo-fair-desktop@1x.jpg" media="(min-width: 960px)">
             <source srcset="img/photo-fair-tablet@1x.jpg" media="(min-width: 660px)">
             <img class="photo-gallery__img  photo-gallery__img--fair" src="img/photo-fair-mobile@1x.jpg" alt="Кубанская Бахча">
           </picture>
-          <strong class="photo-gallery__author">Сергей</strong>
-          <i class="photo-gallery__time">(25 часов назад)</i>
-          <p class="photo-gallery__comment">Самая кубанская в мире!</p>
-          <button class="photo-gallery__like-count-btn" type="button" name="button">
-            <img src="img/icon-heart.svg" alt="Нравится">
-          </button>
-          <b class="photo-gallery__likes">Нравится: 4</b>
+          <div class="photo-gallery__content">
+            <p class="photo-gallery__author">Сергей
+              <i class="photo-gallery__time">(25 часов назад)</i>
+            </p>
+            <p class="photo-gallery__comment">Самая кубанская в мире!</p>
+            <div class="photo-gallery__likes">
+              <button class="photo-gallery__button" type="button" name="button">
+                <img class="photo-gallery__img  photo-gallery__img--heart" src="img/icon-heart.svg" width="14" height="12"
+                  alt="Нравится">
+              </button>
+              <b class="photo-gallery__likes-count">Нравится: 4</b>
+            </div>
+          </div>
         </article>
         <article class="photo-gallery__item">
           <picture>
-            <source srcset="img/photo-pov-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo-pov-desktop@1x.jpg" media="(min-width: 960px)">
             <source srcset="img/photo-pov-tablet@1x.jpg" media="(min-width: 660px)">
             <img class="photo-gallery__img  photo-gallery__img--pov" src="img/photo-pov-mobile@1x.jpg" alt="Пейзаж">
           </picture>
-          <strong class="photo-gallery__author">Максим</strong>
-          <i class="photo-gallery__time">(40 часов назад)</i>
-          <p class="photo-gallery__comment">Где снег-то?</p>
-          <button class="photo-gallery__like-count-btn" type="button" name="button">
-            <img src="img/icon-heart.svg" alt="Нравится">
-          </button>
-          <b class="photo-gallery__likes">Нравится: 150</b>
+          <div class="photo-gallery__content">
+            <p class="photo-gallery__author">Максим
+              <i class="photo-gallery__time">(40 часов назад)</i>
+            </p>
+            <p class="photo-gallery__comment">Где снег-то?</p>
+            <div class="photo-gallery__likes">
+              <button class="photo-gallery__button" type="button" name="button">
+                <img class="photo-gallery__img  photo-gallery__img--heart" src="img/icon-heart.svg" width="14" height="12"
+                  alt="Нравится">
+              </button>
+              <b class="photo-gallery__likes-count">Нравится: 150</b>
+            </div>
+          </div>
         </article>
         <article class="photo-gallery__item">
           <picture>
-            <source srcset="img/photo-wing-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo-wing-desktop@1x.jpg" media="(min-width: 960px)">
             <source srcset="img/photo-wing-tablet@1x.jpg" media="(min-width: 660px)">
             <img class="photo-gallery__img  photo-gallery__img--wing" src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолёта">
           </picture>
-          <strong class="photo-gallery__author">Надежда</strong>
-          <i class="photo-gallery__time">(45 часов назад)</i>
-          <p class="photo-gallery__comment">Всем GM и взаимные лайки!</p>
-          <button class="photo-gallery__like-count-btn" type="button" name="button">
-            <img src="img/icon-heart.svg" alt="Нравится">
-          </button>
-          <b class="photo-gallery__likes">Нравится: 2560</b>
+          <div class="photo-gallery__content">
+            <p class="photo-gallery__author">Надежда
+              <i class="photo-gallery__time">(45 часов назад)</i>
+            </p>
+            <p class="photo-gallery__comment">Всем GM и взаимные лайки!</p>
+            <div class="photo-gallery__likes">
+              <button class="photo-gallery__button" type="button" name="button">
+                <img class="photo-gallery__img  photo-gallery__img--heart" src="img/icon-heart.svg" width="14" height="12"
+                  alt="Нравится">
+              </button>
+              <b class="photo-gallery__likes-count">Нравится: 2560</b>
+            </div>
+          </div>
         </article>
       </div>
-    </section>>
-
-    <!-- <div class="photo-gallery__item photo-gallery__item--panorama">
-        <div class="photo-gallery__header">
-
-        </div>
-        <div class="photo-gallery__wrapper">
-          <div class="photo-gallery__content  photo-gallery__content--panorama">
-
-          </div>
-        </div>
-      </div> -->
-    <!-- <div class="photo-gallery__wrapper">
-        <ul class="photo-gallery__list"> -->
-    <!-- <li class="photo-gallery__item">
-            <div class="photo-gallery__header">
-
-            </div>
-            <div class="photo-gallery__content">
-
-            </div>
-          </li> -->
-    <!-- <li class="photo-gallery__item">
-            <div class="photo-gallery__header">
-
-            </div>
-            <div class="photo-gallery__content">
-              
-            </div>
-          </li> -->
-    <!-- <li class="photo-gallery__item">
-            <div class="photo-gallery__header">
-
-            </div>
-            <div class="photo-gallery__content">
-              
-            </div>
-          </li> -->
-    <!-- <li class="photo-gallery__item">
-            <div class="photo-gallery__header">
-              
-            </div>
-            <div class="photo-gallery__content">
-              
-            </div>
-          </li> -->
-    <!-- <li class="photo-gallery__item">
-            <div class="photo-gallery__header">
-
-            </div>
-            <div class="photo-gallery__content">
-
-            </div>
-          </li> -->
-    <!-- <li class="photo-gallery__item">
-            <div class="photo-gallery__header">
-              
-            </div>
-            <div class="photo-gallery__content">
-              
-            </div>
-          </li> -->
-    <!-- </ul> -->
-    <!-- </div> -->
+    </section>
     <div class="appeal">
       <div class="appeal__wrapper">
         <p class="appeal__content">Затмите их всех!</p>
-        <p class="appeal__content">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="appeal__content">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
     </div>
     <div class="photo-upload">
       <div class="photo-upload__wrapper">
         <div class="photo-upload__img-wrapper">
           <picture>
-            <source srcset="img/photo-road-desktop@1x.jp" media="(min-width: 1200px)">
-            <source srcset="img/photo-road-tablet@1x.jp" media="(min-width: 660px)">
+            <source srcset="img/photo-road-desktop@1x.jpg" media="(min-width: 960px)">
+            <source srcset="img/photo-road-tablet@1x.jpg" media="(min-width: 660px)">
             <img class="photo-upload__img  photo-upload__img--road" src="img/photo-road-mobile@1x.jpg" alt="Заснеженая дорога">
           </picture>
         </div>
@@ -252,11 +232,25 @@
               </li>
             </ul>
           </div>
-          <div class="photo-upload__range-controls">
-            <div class="photo-upload__scale">
-              <div class="photo-upload__bar"></div>
+          <div class="filter__range">
+            <div class="filter__range-controls">
+              <div class="filter__scale">
+                <div class="filter__bar"></div>
+              </div>
+              <div class="filter__range-toggle"></div>
             </div>
-            <div class="photo-upload__range-toggle"></div>
+            <div class="filter__range-controls">
+              <div class="filter__scale">
+                <div class="filter__bar"></div>
+              </div>
+              <div class="filter__range-toggle"></div>
+            </div>
+            <div class="filter__range-controls">
+              <div class="filter__scale">
+                <div class="filter__bar"></div>
+              </div>
+              <div class="filter__range-toggle"></div>
+            </div>
           </div>
           <div class="photo-upload__buttons">
             <button class="button photo-upload__button photo-upload__button--submit" type="submit" name="button-submit">Запостить</button>
