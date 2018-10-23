@@ -1,26 +1,85 @@
 .download {
-  background-color: #283645;
-  font: inherit;
-  color: #ffffff;
-  padding: 0 20px;
+  background-color: #1d2631;
+  font-family: @font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
   text-align: center;
+  color: #ffffff;
+  z-index: 10;
+}
+
+.download__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 270px;
+  padding: 28px 0;
+}
+
+.download__slogan {
+  display: none;
 }
 
 .download__link {
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 18px;
-  color: #ffffff;
+  display: block;
+  width: 300px;
+  padding-top: 13px;
+  padding-bottom: 16px; 
+  border-radius: 25px;
   border: 3px solid #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
 
   &:hover {
     background-color: #ffffff;
-    color: #d22856;
+    color: @pink;
   }
 
   &:active {
-    color: rgba(210, 40, 86, 0.3);
+    color: lighten(@pink, 30%);
+  }
+}
+
+.download__for {
+  font-weight: 300;
+}
+
+@media @tablet-width {
+  .download {
+    background-color: transparent;
+  }
+
+  .download__wrapper {
+    min-height: 420px;
+    max-width: 300px;
+    padding: 0;
+  }
+
+  .download__slogan {
+    display: block;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+  }
+
+  .download__for {
+    font-size: 18px;
+  }
+}
+
+@media @desktop-width {
+  .download__wrapper {
+    min-height: 520px;
+  }
+
+  .download__slogan {
+    font-size: 50px;
+    line-height: 60px;
   }
 }
