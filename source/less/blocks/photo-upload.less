@@ -100,13 +100,14 @@
   .photo-upload__buttons {
     justify-content: flex-end;
     padding: 0;
+    border-top: none;
   }
   
   .photo-upload__button {
     width: 263px;
 
     &--submit {
-      margin-bottom: 55px;
+      margin-bottom: 24px;
     }
   }
 }
@@ -115,5 +116,20 @@
   .photo-upload__img-wrapper {
     margin-right: 0;
     padding: 57px 80px;
+  }
+
+  .photo-upload__buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-width: 410px;
+  }
+  
+  .photo-upload__button {
+    width: 183px;
+
+    &--submit {
+      margin-bottom: 0;
+    }
   }
 }
