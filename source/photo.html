@@ -57,14 +57,14 @@
     </div>
     <section class="photo-gallery">
       <h2 class="visually-hidden">Фотогалерея</h2>
-      <div class="photo-gallery__wrapper">
-        <article class="photo-gallery__item  photo-gallery__item--panorama">
+      <article class="photo-gallery__panorama">
+        <picture>
+          <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)">
+          <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
+          <img class="photo-gallery__img  photo-gallery__img--panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама">
+        </picture>
+        <div class="photo-gallery__wrapper  photo-gallery__wrapper--panorama">
           <h3 class="photo-gallery__title">Панорама дня</h3>
-          <picture>
-            <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)">
-            <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
-            <img class="photo-gallery__img  photo-gallery__img--panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама">
-          </picture>
           <div class="photo-gallery__content  photo-gallery__content--panorama">
             <p class="photo-gallery__author  photo-gallery__author--panorama">Анна
               <i class="photo-gallery__time">(5 минут назад)</i>
@@ -80,7 +80,9 @@
               <b class="photo-gallery__likes-count  photo-gallery__likes-count--panorama">Нравится: 215</b>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
+      <div class="photo-gallery__wrapper">
         <article class="photo-gallery__item">
           <picture>
             <source srcset="img/photo-car-desktop@1x.jpg" media="(min-width: 960px)">
