@@ -1,4 +1,4 @@
-.header {
+.page-header {
   position: relative;
   background-color: @navy;
   font-family: @font;
@@ -11,54 +11,7 @@
   background-position: center;
 }
 
-.header__navigation {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.header__wrapper {
-  .wrapper();
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
-  &--open {
-    background-color: @navy;
-  }
-
-  &--close {
-    background-color: rgba(29, 38, 49, 0.5);
-  }
-}
-
-.header__logo {
-  display: flex;
-  align-items: center;
-  height: 69px;
-}
-
-.header__button {
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-
-  &--close {
-    display: none;
-  }
-}
-
-.header__menu {
-  width: 100%;
-}
-
-.header__content {
+.page-header__content {
   &--index {
     &::before {
       content: "";
@@ -82,7 +35,7 @@
   }
 }
 
-.header__title {
+.page-header__title {
   display: flex;
   margin: auto;
   font-size: 24px;
@@ -100,15 +53,11 @@
 }
 
 @media @tablet-width {
-  .header {
+  .page-header {
     background-image: url("@{img}bg-back-tablet@1x.jpg");
   }
-  
-  .header__logo {
-    height: 109px;
-  }
 
-  .header__content {
+  .page-header__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,44 +82,24 @@
     }
   }
 
-  .header__title {
+  .page-header__title {
     font-size: 50px;
     line-height: 60px;
   }
 }
 
 @media @desktop-width {
-  .header {
+  .page-header {
     background-image: url("@{img}bg-back-desktop@1x.jpg");
   }
 
-  .header__navigation {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 110px;
-    background-color: rgba(29, 38, 49, 0.5);
-    .wrapper();
-  }
-
-  .header__wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
- }
-
-  .header__top {
+  .page-header__top {
     &--open {
       background-color: rgba(29, 38, 49, 0.5);
     }
   }
 
-  .header__button {
-    display: none;
-  }
-
-  .header__content {
+  .page-header__content {
     &--index {
       min-height: 740px;
     }

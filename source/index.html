@@ -9,44 +9,39 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="index">
-  <header class="header index__header">
-    <nav class="header__navigation">
-      <div class="header__top header__top--open">
-        <div class="header__wrapper">
-          <a class="logo header__logo">
+<body>
+  <header class="page-header">
+    <nav class="main-nav">
+      <div class="main-nav__layout-positioner">
+        <div class="main-nav__wrapper">
+          <a class="logo main-nav__logo">
             <picture>
               <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
               <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
-              <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Пинк">
+              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Пинк">
             </picture>
           </a>
-          <button class="button header__button header__button--open" type="button" name="button">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <img class="menu-burger" src="img/icon-menu-burger.svg" width="50" height="24" alt="Открыть меню">
-          </button>
-          <button class="button header__button header__button--close" type="button" name="button">
-            <span class="visually-hidden">Закрыть меню</span>
-            <img class="menu-cross" src="img/icon-menu-cross.svg" width="24" height="23" alt="Закрыть меню">
           </button>
         </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
       </div>
-      <ul class="header__menu site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
     </nav>
-    <div class="header__content header__content--index">
+    <div class="page-header__content page-header__content--index">
       <h1 class="visually-hidden">Мобильное приложение Пинк</h1>
       <section class="download">
         <div class="download__wrapper">
