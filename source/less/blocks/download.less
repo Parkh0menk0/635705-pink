@@ -12,10 +12,8 @@
 .download__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  min-height: 270px;
-  padding: 28px 0;
+  padding: 28px 0 30px;
 }
 
 .download__slogan {
@@ -24,9 +22,10 @@
 
 .download__link {
   display: block;
-  width: 300px;
+  width: 280px;
   padding-top: 13px;
-  padding-bottom: 16px; 
+  padding-bottom: 18px;
+  margin-bottom: 30px;
   border-radius: 25px;
   border: 3px solid #ffffff;
   font-size: 18px;
@@ -47,7 +46,9 @@
 }
 
 .download__for {
+  margin: 0;
   font-weight: 300;
+  max-width: 280px;
 }
 
 @media @tablet-width {
@@ -56,7 +57,6 @@
   }
 
   .download__wrapper {
-    min-height: 420px;
     max-width: 300px;
     padding: 0;
   }
@@ -66,10 +66,19 @@
     font-size: 40px;
     line-height: 48px;
     font-weight: 300;
+    max-width: 200px;
+    margin-bottom: 33px;
+  }
+
+  .download__link {
+    width: 300px;
+    margin-bottom: 41px;
   }
 
   .download__for {
     font-size: 18px;
+    max-width: 300px;
+    margin-bottom: 109px;
   }
 }
 
@@ -81,5 +90,16 @@
   .download__slogan {
     font-size: 50px;
     line-height: 60px;
+    max-width: 240px;
+    margin-bottom: 52px;
+  }
+
+  .download__link {
+    font-size: 21px;
+    margin-bottom: 65px;
+  }
+
+  .download__for {
+    margin-bottom: 122px;
   }
 }
