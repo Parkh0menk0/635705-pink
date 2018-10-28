@@ -1,10 +1,12 @@
 .preamble {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   background-color: #ffffff;
-  min-height: 215px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .preamble__item {
@@ -14,18 +16,27 @@
   font-weight: 300;
   line-height: 30px;
   color: @navy;
+
+  &:first-child {
+    margin-bottom: 26px;
+  }
 }
 
 @media @tablet-width {
   .preamble {
     justify-content: center;
     text-align: center;
-    min-height: 240px;
+    padding-top: 50px;
+    padding-bottom: 45px;
   }
 
   .preamble__item {
     font-size: 40px;
     line-height: 48px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
 
     &:nth-child(2) {
       align-self: center;
@@ -36,7 +47,7 @@
 
 @media @desktop-width {
   .preamble {
-    min-height: 325px;
+    min-height: 316px;
   }
 
   .preamble__item {
