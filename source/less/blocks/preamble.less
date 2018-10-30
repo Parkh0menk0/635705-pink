@@ -6,7 +6,14 @@
   text-align: center;
   background-color: #ffffff;
   padding-top: 40px;
-  padding-bottom: 30px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(to right bottom, @white 50%, @bg-grey 50%);
+  }
 }
 
 .preamble__item {
@@ -14,11 +21,12 @@
   font-family: inherit;
   font-size: 24px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 29px;
   color: @navy;
+  margin-bottom: 28px;
 
-  &:first-child {
-    margin-bottom: 26px;
+  &:last-child {
+    margin-bottom: 33px;
   }
 }
 
@@ -26,8 +34,15 @@
   .preamble {
     justify-content: center;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 45px;
+    padding-top: 49px;
+
+    &::after {
+      background-image: url("@{img}iphone-screen-3-tablet@1x.png"),
+        linear-gradient(to right bottom, @white 50%, @bg-grey 50%);
+      background-repeat: no-repeat;
+      background-position: 20px 5px, 0 0;
+      height: 50px;
+    }
   }
 
   .preamble__item {
@@ -38,24 +53,36 @@
       margin-bottom: 0;
     }
 
-    &:nth-child(2) {
+    &:last-child {
       align-self: center;
       max-width: 340px;
+      margin-bottom: 47px;
     }
   }
 }
 
 @media @desktop-width {
   .preamble {
-    min-height: 316px;
+    padding-top: 67px;
+
+    &::after {
+      background-image: url("@{img}iphone-screen-1-desktop@1x.png"),
+        url("@{img}iphone-screen-2-desktop@1x.png"),
+        url("@{img}iphone-screen-3-desktop@1x.png"),
+        linear-gradient(to right bottom, @white 50%, @bg-grey 50%);
+      background-repeat: no-repeat;
+      background-position: 135px -3px, 457px -3px, 779px -3px, 0 0;
+      height: 91px;
+    }
   }
 
   .preamble__item {
     font-size: 50px;
     line-height: 60px;
 
-    &:nth-child(2) {
+    &:last-child {
       max-width: 420px;
+      margin-bottom: 79px;
     }
   }
 }
