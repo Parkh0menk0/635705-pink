@@ -1,27 +1,35 @@
 .story-form {
   display: flex;
   flex-direction: column;
-  background-color: @bg-grey;
 }
 
 .story-form__section {
   .wrapper();
   border: none;
 
-  &:nth-of-type(odd) {
-    background-color: @white;
-    padding-top: 38px;
+  &:nth-of-type(even) {
+    background-color: @bg-grey;
+  }
+
+  &--full-name {
     padding-bottom: 42px;
   }
 
-  &:nth-of-type(even) {
+  &--progress {
     padding-bottom: 47px;
   }
 
-  &--send {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &--contact-info {
+    padding-top: 32px;
+    padding-bottom: 42px;
+  }
+
+  &--which-os {
+    padding-bottom: 38px;
+  }
+
+  &--emotions {
+    padding-bottom: 28px;
   }
 }
 
@@ -29,7 +37,7 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 17px;
 
   &:last-child {
     margin-bottom: 0;
@@ -40,24 +48,44 @@
 .story-form__label {
   font-size: 14px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 30px;
   color: @pink;
   text-transform: uppercase;
 }
 
 .story-form__title {
-  padding-top: 38px;
-  margin-bottom: 43px;
   text-align: center;
   max-width: 220px;
 
-  &--tel-and-email {
+  // &--full-name {
+  //   padding-top: 38px;
+  //   padding-bottom: 42px;
+  // }
+
+  &--progress {
+    line-height: 18px;
+    padding-top: 38px;
+    margin-bottom: 43px;
+  }
+
+  &--contact-info {
     display: none;
+  }
+
+  &--which-os {
+    line-height: 18px;
+    padding-top: 38px;
+    margin-bottom: 39px;
+  }
+
+  &--emotions {
+    padding-top: 41px;
+    margin-bottom: -4px;
   }
 }
 
 .story-form__label {
-  margin-bottom: 11px;
+  margin-bottom: 5px;
   padding-left: 22px;
 }
 
@@ -68,9 +96,12 @@
 }
 
 .story-form__textarea {
-  height: 198px;
+  font-size: 18px;
+  line-height: 30px;
+  color: @navy;
+  min-height: 200px;
   width: 100%;
-  padding: 22px;
+  padding: 15px 18px;
 }
 
 .story-form__input {
@@ -87,40 +118,36 @@
 
 .story-form__filter-option {
   position: relative;
-  padding-left: 70px;
+  padding-left: 69px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    top: -4px;
+    left: 0;
+    border: 2px solid #e5e5e5;
+    background-color: @white;
   }
 
   &--checkbox {
     margin-bottom: 52px;
 
     &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -4px;
-      left: 0;
-      width: 39px;
-      height: 39px;
-      border: 2px solid #e5e5e5;
       border-radius: 2px;
     }
   }
 
   &--radio {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 
     &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -7px;
-      left: 0;
-      width: 40px;
-      height: 40px;
-      border: 2px solid #e5e5e5;
       border-radius: 50%;
     }
   }
@@ -129,6 +156,16 @@
 .story-form__filter-option label {
   font-size: 18px;
   line-height: 30px;
+}
+
+.story-form__send {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @white;
+  min-height: 139px;
+  margin-bottom: 44px;
 }
 
 .story-form__button {
@@ -206,19 +243,13 @@
     &:last-of-type {
       order: 5;
     }
-
-    &--send {
-      padding: 0;
-      flex-direction: row;
-      justify-content: space-between;
-    }
   }
 
   .story-form__title {
     padding: 0 24px;
     margin-bottom: 36px;
 
-    &--tel-and-email {
+    &--contact-info {
       display: block;
     }
   }
@@ -233,7 +264,7 @@
       margin-bottom: 0;
     }
 
-    &--tel-and-email {
+    &--contact-info {
       display: flex;
       flex-direction: column-reverse;
       justify-content: space-between;
@@ -246,19 +277,24 @@
     padding-left: 0;
     padding-right: 22px;
 
-    &--tel-and-email {
+    &--contact-info {
       padding-left: 22px;
     }
   }
 
   .story-form__input {
-    &--tel-and-email {
+    &--contact-info {
       margin-bottom: 15px;
     }
   }
 
   .story-form__filter-option {
     padding-left: 60px;
+  }
+
+  .story-form__send {
+    padding: 0;
+    flex-direction: row;
   }
 
   .story-form__button {
