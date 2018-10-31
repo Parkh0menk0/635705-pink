@@ -1,9 +1,15 @@
 .intro {
-  display: flex;
-  margin: auto;
   .wrapper();
   background-color: #ffffff;
-  min-height: 184px;
+  padding-top: 45px;
+
+  &--photo {
+    padding-bottom: 49px;
+  }
+
+  &--form {
+    padding-bottom: 2px;
+  }
 }
 
 .intro__item {
@@ -12,6 +18,15 @@
   line-height: 30px;
   color: @navy;
   text-align: center;
+  margin: 0 auto;
+
+  &--photo {
+    max-width: 253px;
+  }
+
+  // &--form {
+  //   max-width: ;
+  // }
 }
 
 @media @tablet-width {

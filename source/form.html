@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="inner-page  inner-page--form">
   <header class="page-header">
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
       <div class="main-nav__layout-positioner">
@@ -64,27 +64,24 @@
       <h1 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
   </header>
-  <main class="main form__main">
+  <main>
     <div class="intro intro--form">
-      <p class="intro__item intro__item--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
-        миль на вашу
-        бонусную карту! Пожалуйста, заполните форму ниже:
-      </p>
+      <p class="intro__item intro__item--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
     </div>
     <form class="story-form" action="https://echo.htmlacademy.ru" method="post">
       <h2 class="visually-hidden">Форма</h2>
       <fieldset class="story-form__section">
         <legend class="visually-hidden">Ф.И.О.:</legend>
         <p class="story-form__item">
-          <label for="surname" class="story-form__label">Фамилия</label>
+          <label for="surname" class="story-form__label">Фамилия:</label>
           <input id="surname" class="story-form__input" type="text" placeholder="Укажите фамилию *" required>
         </p>
         <p class="story-form__item">
-          <label for="name" class="story-form__label">Имя</label>
-          <input id="name" class="story-form__input" type="text" placeholder="Укажите ваше имя *" required>
+          <label for="name" class="story-form__label">Имя:</label>
+          <input id="name" class="story-form__input" type="text" placeholder="Введите ваше имя *" required>
         </p>
         <p class="story-form__item">
-          <label for="patronymic" class="story-form__label">Отчество</label>
+          <label for="patronymic" class="story-form__label">Отчество:</label>
           <input id="patronymic" class="story-form__input" type="text" placeholder="Ну и отчество тоже">
         </p>
       </fieldset>

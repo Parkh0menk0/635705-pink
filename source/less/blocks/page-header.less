@@ -27,6 +27,12 @@
 
   &--inner {
     .wrapper();
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 29px;
+    line-height: 29px;
+    min-height: 170px;
 
     &::before {
       content: "";
@@ -37,11 +43,11 @@
 
 .page-header__title {
   display: flex;
-  margin: auto;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
   color: #ffffff;
+  margin: 0;
 
   &--photo {
     max-width: 350px;
