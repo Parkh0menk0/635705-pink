@@ -109,7 +109,7 @@
     padding-top: 97px;
     padding-bottom: 73px;
     padding-left: 50%;
-    
+
     &::before {
       content: "";
       display: block;
@@ -163,11 +163,12 @@
 @media @desktop-width {
   .advantages__wrapper {
     padding-top: 30px;
+
     &::after {
       display: none;
     }
   }
-  
+
   .advantages__list {
     flex-direction: row;
     justify-content: flex-start;
@@ -183,41 +184,28 @@
     padding-top: 90px;
     padding-bottom: 114px;
     background-color: @bg-grey;
-    
-      &::before {
-        content: "";
-        display: block;
-        width: 298px;
-        height: 345px;
-        position: absolute;
-        left: 130px;
-        top: -5px;
-        background-image: url("@{img}icon-editor-diagram-fill.svg"),
-          url("@{img}icon-timer.svg");
-        background-repeat: no-repeat;
-        background-size: 253px 253px,
-          298px 345px;
-      }
-  
-      &::after {
-        content: "24";
-        display: block;
-        width: 130px;
-        height: 86px;
-        position: absolute;
-        color: @pink;
-        font-size: 120px;
-        font-weight: bold;
-        left: 210px;
-        top: 173px;
-      }
+
+    &::before {
+      width: 298px;
+      height: 345px;
+      left: 130px;
+      top: -5px;
+      background-size: 253px 253px,
+        298px 345px;
+    }
+
+    &::after {
+      font-size: 120px;
+      left: 210px;
+      top: 173px;
+    }
   }
 
   .advantages__additional br {
     &:first-child {
       display: inline;
     }
-    
+
     &:last-child {
       display: none;
     }
