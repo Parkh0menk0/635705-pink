@@ -1,28 +1,78 @@
 .prices {
   background-color: @bg-grey;
-  font: inherit;
-  color: inherit;
+  padding-top: 66px;
+  padding-bottom: 41px;
+  overflow: hidden;
 }
 
-.prices__list {
-  .default-list();
+.prices input[type="radio"] {
+  display: none;
 }
 
-.prices__item {
+.prices__controls {
   text-align: center;
 }
 
-.prices__title-wrapper {
-  position: relative;
+.prices__controls label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 8px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .prices__controls label[for="btn-1"],
+#btn-2:checked ~ .prices__controls label[for="btn-2"],
+#btn-3:checked ~ .prices__controls label[for="btn-3"] {
+  background-color: @white;
+  box-shadow: 0 0 0 3px @navy;
+}
+
+#btn-1:checked ~ .prices__table {
+  transform: translate(20px);
+  transition-duration: 300ms;
+}
+
+#btn-2:checked ~ .prices__table {
+  transform: translate(-256px);
+  transition-duration: 300ms;
+}
+
+#btn-3:checked ~ .prices__table {
+  transform: translate(-540px);
+  transition-duration: 300ms;
+}
+
+.prices__table {
+  border-collapse: collapse;
+  width: 834px;
+  margin-bottom: 32px;
+}
+
+.prices__table-head {
   background-color: @navy;
+}
+
+.prices__table-heading {
+  padding-top: 16px;
+  padding-bottom: 19px;
+  position: relative;
+  width: 278px;
+}
+
+.prices__table-body {
+  background-color: @white;
 }
 
 .prices__title {
   margin: 0;
+  margin-bottom: 2px;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
-  color: #ffffff;
+  color: @white;
   text-transform: uppercase;
 }
 
@@ -30,6 +80,54 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
-  color: #ffffff;
+  color: @white;
   text-transform: uppercase;
+}
+
+.prices__table-row {
+  th {
+    border-right: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+  }
+
+  td {
+    height: 61px;
+    padding-left: 20px;
+    color: @navy;
+    text-transform: uppercase;
+    border: 2px solid #e5e5e5;
+  }
+
+  &--pink-filter {
+    td {
+      height: 60px;
+      border-top: none;
+    }
+  }
+}
+
+.prices__table-cell {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 31px;
+    height: 27px;
+    position: absolute;
+    right: 17px;
+    top: 15px;
+  }
+
+  &--enabled {
+    &::after {
+      background: url("@{img}price-icon-yes.svg") center no-repeat;
+    }
+  }
+
+  &--disabled {
+    &::after {
+      background: url("@{img}icon-no.svg") center no-repeat;
+    }
+  }
 }
