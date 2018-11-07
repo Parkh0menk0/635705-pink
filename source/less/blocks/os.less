@@ -1,9 +1,10 @@
 .os {
+  .default-list();
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 240px;
-  .default-list();
+  margin-bottom: 22px;
 }
 
 .os__link {
@@ -11,7 +12,7 @@
   width: 58px;
   height: 58px;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 100%;
 
   &--apple {
     background-image: url("@{img}logo-apple.svg");
@@ -23,5 +24,17 @@
 
   &--windows {
     background-image: url("@{img}logo-microsoft.svg");
+  }
+}
+
+@media @tablet-width {
+  .os {
+    margin-bottom: 39px;
+  }
+}
+
+@media @desktop-width {
+  .os {
+    margin-bottom: 55px;
   }
 }

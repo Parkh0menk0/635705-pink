@@ -1,0 +1,159 @@
+.main-nav {
+  &--opened {
+    background-color: @navy;
+  }
+
+  &--closed {
+    background-color: fade(@dark-navy, 30%);
+  }
+
+  &--closed .main-nav__wrapper {
+    border-bottom: none;
+  }
+}
+
+.main-nav__layout-positioner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-nav__wrapper {
+  .wrapper();
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000101;
+}
+
+.main-nav__logo {
+  height: 69px;
+}
+
+.main-nav__logo img {
+  width: 75px;
+  height: 66px;
+}
+
+.main-nav__toggle {
+  padding: 0;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+  border: none;
+
+  height: 23px;
+
+  align-self: center;
+
+  &--closed .main-nav__toggle-icon--opened {
+    display: none;
+  }
+
+  &--closed .main-nav__toggle-icon--closed {
+    display: block;
+  }
+}
+
+.main-nav__toggle-icon {
+  path {
+    fill: @white;
+
+    &:hover {
+      fill: @pink;
+    }
+
+    &:active {
+      fill: fade(@pink, 30%);
+    }
+  }
+
+  &--closed {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &--closed {
+    display: block;
+  }
+
+  &--opened {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  .default-list();
+}
+
+@media @tablet-width {
+  .main-nav__logo {
+    height: 110px;
+  }
+
+  .main-nav__logo img {
+    width: 147px;
+    height: 96px;
+  }
+}
+
+@media @mobile-and-tablet-width {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+}
+
+@media @desktop-width {
+  .main-nav {
+    background-color: fade(#000101, 30%);
+  }
+
+  .main-nav__layout-positioner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    .wrapper();
+  }
+
+  .main-nav__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .main-nav__logo {
+    height: 110px;
+  }
+
+  .main-nav__logo img {
+    width: 147px;
+    height: 95px;
+  }
+
+  .main-nav .main-nav__toggle {
+    display: none;
+  }
+}

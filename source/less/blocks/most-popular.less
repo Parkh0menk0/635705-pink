@@ -1,7 +1,44 @@
 .most-popular {
   position: absolute;
-  left: 0;
+  z-index: 10;
   top: 0;
-  background-image: url("@{img}bg-hit-tablet.svg");
-  background-repeat: no-repeat;
+  left: -2px;
+
+  overflow: hidden;
+
+  width: 74px;
+  height: 74px;
+
+  background: url("@{img}bg-hit.svg") no-repeat 0 0;
+}
+
+.most-popular b {
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @white;
+  transform: rotate(-45deg) translateX(-18px);
+}
+
+@media @tablet-width {
+  .most-popular {
+    left: 0;
+
+    background: url("@{img}bg-hit-tablet.svg") no-repeat 0 0;
+  }
+
+  .most-popular b {
+    transform: rotate(-45deg) translate(-15px, -9px);
+  }
+}
+
+@media @desktop-width {
+  .most-popular {
+    background: url("@{img}bg-hit.svg") no-repeat 0 0;
+  }
+
+  .most-popular b {
+    transform: rotate(-45deg) translateX(-18px);
+  }
 }
