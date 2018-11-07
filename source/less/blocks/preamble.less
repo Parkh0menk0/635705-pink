@@ -1,11 +1,5 @@
 .preamble {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: center;
   background-color: #ffffff;
-  padding-top: 40px;
 
   &::after {
     content: "";
@@ -14,6 +8,15 @@
     height: 31px;
     background-image: linear-gradient(to right bottom, @white 50%, @bg-grey 50%);
   }
+}
+
+.preamble__wrapper {
+  .wrapper();
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  padding-top: 40px;
 }
 
 .preamble__item {
@@ -32,13 +35,15 @@
 
 @media @tablet-width {
   .preamble {
-    justify-content: center;
-    text-align: center;
-    padding-top: 49px;
-
     &::after {
       height: 50px;
     }
+  }
+
+  .preamble__wrapper {
+    justify-content: center;
+    text-align: center;
+    padding-top: 49px;
   }
 
   .preamble__item {
@@ -59,11 +64,13 @@
 
 @media @desktop-width {
   .preamble {
-    padding-top: 67px;
-
     &::after {
       height: 91px;
     }
+  }
+
+  .preamble__wrapper {
+    padding-top: 67px;
   }
 
   .preamble__item {

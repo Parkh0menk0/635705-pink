@@ -1,7 +1,7 @@
 .prices {
   background-color: @bg-grey;
   padding-top: 66px;
-  padding-bottom: 41px;
+  padding-bottom: 43px;
   overflow: hidden;
 }
 
@@ -12,7 +12,7 @@
 .prices__table {
   border-collapse: collapse;
   width: 834px;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .prices__table-heading,
@@ -93,6 +93,10 @@
   }
 }
 
+.prices__table-row:first-child .prices__table-cell {
+  height: 60px;
+}
+
 @media @mobile-width-only {
   .prices__controls {
     text-align: center;
@@ -108,24 +112,24 @@
     cursor: pointer;
   }
 
-  #btn-1:checked~.prices__controls label[for="btn-1"],
-  #btn-2:checked~.prices__controls label[for="btn-2"],
-  #btn-3:checked~.prices__controls label[for="btn-3"] {
+  #btn-1:checked ~ .prices__controls label[for="btn-1"],
+  #btn-2:checked ~ .prices__controls label[for="btn-2"],
+  #btn-3:checked ~ .prices__controls label[for="btn-3"] {
     background-color: @white;
     box-shadow: 0 0 0 3px @navy;
   }
 
-  #btn-1:checked~.prices__wrapper .prices__table {
+  #btn-1:checked ~ .prices__wrapper .prices__table {
     transform: translate(20px);
     transition-duration: 300ms;
   }
 
-  #btn-2:checked~.prices__wrapper .prices__table {
+  #btn-2:checked ~ .prices__wrapper .prices__table {
     transform: translate(-256px);
     transition-duration: 300ms;
   }
 
-  #btn-3:checked~.prices__wrapper .prices__table {
+  #btn-3:checked ~ .prices__wrapper .prices__table {
     transform: translate(-540px);
     transition-duration: 300ms;
   }
