@@ -1,5 +1,6 @@
 .page-header {
   position: relative;
+  width: 100%;
   background-color: @navy;
   font-family: @font;
   font-size: 14px;
@@ -9,7 +10,12 @@
   background-image: url("@{img}bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
+  background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("@{img}bg-back-mobile@2x.jpg");
+    background-size: cover auto;
+  }
 }
 
 .page-header__content {
@@ -64,6 +70,11 @@
     background-image: url("@{img}bg-back-tablet@1x.jpg");
     background-position: bottom center;
     background-size: auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("@{img}bg-back-tablet@2x.jpg");
+      background-size: cover auto;
+    }
   }
 
   .page-header__content {
@@ -100,6 +111,11 @@
 @media @desktop-width {
   .page-header {
     background-image: url("@{img}bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("@{img}bg-back-desktop@2x.jpg");
+      background-size: cover auto;
+    }
   }
 
   .page-header__content {
