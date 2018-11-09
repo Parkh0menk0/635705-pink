@@ -23,15 +23,17 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #000101;
+  height: 70px;
 }
 
 .main-nav__logo {
-  height: 69px;
+  align-self: center;
 }
 
 .main-nav__logo img {
   width: 75px;
-  height: 66px;
+  height: 22px;
+  align-self: center;
 }
 
 .main-nav__toggle {
@@ -99,13 +101,13 @@
 }
 
 @media @tablet-width {
-  .main-nav__logo {
-    height: 110px;
+  .main-nav__wrapper {
+    height: 105px;
   }
 
   .main-nav__logo img {
     width: 147px;
-    height: 96px;
+    height: 40px;
   }
 }
 
@@ -142,15 +144,7 @@
     align-items: center;
     padding: 0;
     border-bottom: none;
-  }
-
-  .main-nav__logo {
     height: 110px;
-  }
-
-  .main-nav__logo img {
-    width: 147px;
-    height: 95px;
   }
 
   .main-nav .main-nav__toggle {
