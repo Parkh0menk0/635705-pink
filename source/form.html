@@ -6,10 +6,10 @@
   <title>HTML Academy: Пинк - Конкурс</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<svg style="display: none;">
+<!-- <svg style="display: none;">
   <symbol viewBox="0 0 146.3 40.375" id="header-logo">
     <g class="main-nav__logo-pink">
       <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z" />
@@ -69,9 +69,12 @@
         </g>
       </g>
     </symbol>
-</svg>
+</svg> -->
 
 <body class="inner-page  inner-page--form">
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
       <div class="main-nav__layout-positioner">
@@ -234,7 +237,7 @@
     <div class="footer__wrapper">
       <a class="logo  footer__logo" href="index.html">
         <svg width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
-          
+
         </svg>
       </a>
       <div class="social">
@@ -282,6 +285,8 @@
   </section>
 
   <script src="js/navigation.js"></script>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgxuse.js"></script>
 
 </body>
 
