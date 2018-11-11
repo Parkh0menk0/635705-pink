@@ -1,17 +1,35 @@
-.default-list() {
-  margin: 0;
-  padding: 0;
+.list-reset(@margin: 0, @padding: 0) {
   list-style: none;
+  margin: @margin;
+  padding: @padding;
 }
 
-.wrapper {
-  min-width: 320px;
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
+.link-reset() {
+  display: inline-block;
+}
 
-  @media @desktop-width {
-    max-width: 960px;
-    padding: 0 10px;
-  }
+.wrapper(@min-width: 100%, @padding: 20px) {
+  position: relative;
+  width: @min-width;
+  margin: 0 auto;
+  padding: 0 @padding;
+}
+
+.wrapper-reset() {
+  position: static;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.background(@position-x: 50%, @position-y: 50%, @size: cover) {
+  background-repeat: no-repeat;
+  background-position: @position-x @position-y;
+  background-size: @size;
+}
+
+.button-reset() {
+  border: none;
+  background: none;
+  outline: none;
 }

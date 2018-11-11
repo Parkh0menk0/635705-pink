@@ -1,0 +1,47 @@
+.likes {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: @pink;
+}
+
+.likes__button {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 0;
+
+  padding: 0;
+  margin: 0;
+
+  width: 15px;
+  height: 20px;
+  .button-reset();
+  overflow: hidden;
+}
+
+.likes__counts {
+  margin: 0;
+  padding-left: 32px;
+}
+
+.likes__icon {
+  fill: @pink;
+}
+
+@media (min-width: @tablet-width) {
+  .likes__counts {
+    padding: 0 33px 0 0;
+  }
+
+  .likes__button {
+    top: 3px;
+    left: auto;
+    right: 5px;
+  }
+}

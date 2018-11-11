@@ -1,0 +1,96 @@
+.range__controls {
+  position: relative;
+
+  padding: 20px 23px 35px 18px;
+
+  border-radius: 5px;
+
+  box-sizing: content-box;
+}
+
+.range__scale {
+  height: 2px;
+  background-color: @black;
+}
+
+.range__runner {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 0;
+
+  width: 10px;
+  height: 10px;
+  padding: 0;
+
+  border: 2px solid @pink;
+  background-color: @white;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--crop {
+    left: 75%;
+  }
+
+  &--fill {
+    left: 23%;
+  }
+
+  &--contrast {
+    left: 53%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .range__controls {
+    width: 205px;
+
+    padding: 20px 0 33px 28px;
+  }
+
+  .range__runner {
+    top: 14px;
+  }
+
+  .range--active .range__runner {
+    background-color: @pink;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range__controls {
+    width: 290px;
+
+    padding: 20px 0 33px 28px;
+  }
+
+  .range__runner {
+    position: absolute;
+    top: 14px;
+    left: 0;
+
+    width: 10px;
+    height: 10px;
+
+    &--crop {
+      left: 31%;
+    }
+
+    &--fill {
+      left: 86%;
+    }
+
+    &--contrast {
+      left: 59%;
+    }
+  }
+
+  .uploads__send-post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .uploads__send-post .button {
+    width: 183px;
+  }
+}
