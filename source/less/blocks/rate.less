@@ -1,0 +1,217 @@
+.rate__header {
+  position: relative;
+
+  width: calc(@mobile-width - 50px);
+  padding: 16px 10px 20px 10px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @white;
+
+  background-color: @bg-darkblue;
+
+  &--first {
+    display: none;
+    background: none;
+  }
+}
+
+.rate__price {
+  display: block;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  padding-top: 2px;
+}
+
+.rate__hit {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -1px;
+
+  width: 74px;
+  height: 73px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  transform: rotate(-45deg);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 73px;
+
+    background-image: url("../img/bg-hit.svg");
+    .background();
+
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "Хит";
+    position: absolute;
+    top: 6px;
+    left: -1px;
+
+    display: inline-block;
+    width: 74px;
+    height: 73px;
+  }
+}
+
+.rate__cell {
+  width: calc(@mobile-width - 50px);
+  position: relative;
+  padding: 14px 23px 16px 23px;
+
+  background-color: @white;
+
+  &--first {
+    display: none;
+  }
+}
+
+.rate__option {
+  position: absolute;
+  display: block;
+
+  .background(100%, 100%);
+
+  &--yes {
+    top: 18px;
+    right: 18px;
+    background-image: url("../img/icon-yes.svg");
+    width: 31px;
+    height: 22px;
+  }
+
+  &--no {
+    top: 14px;
+    right: 20px;
+    background-image: url("../img/icon-no.svg");
+    width: 27px;
+    height: 27px;
+  }
+}
+
+.rate__text {
+  font-size: 14px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .rate__header {
+    width: 25%;
+    padding: 12px 0 8px 0;
+
+    font-size: 16px;
+
+    &--first {
+      display: table-cell;
+    }
+  }
+
+  .rate__price {
+    font-size: 18px;
+    padding-top: 0;
+  }
+
+  .rate__cell {
+    width: 25%;
+    padding: 5px 0 11px 0;
+
+    font-size: 14px;
+    line-height: 30px;
+
+    &--first {
+      display: table-cell;
+      padding: 5px 0 11px 15px;
+    }
+  }
+
+  .rate__text {
+    display: none;
+  }
+
+  .rate__option {
+    position: static;
+    margin: 0 auto;
+  }
+
+  .rate__hit {
+    top: -1px;
+    left: 1px;
+
+    width: 61px;
+    height: 61px;
+
+    &::before {
+      width: 58px;
+      height: 58px;
+    }
+
+    &::after {
+      top: 2px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rate__header {
+    width: 25%;
+    padding: 16px 0 22px 0;
+
+    font-size: 18px;
+  }
+
+  .rate__price {
+    font-size: 24px;
+  }
+
+  .rate__cell {
+    width: 25%;
+    padding: 15px 0 15px 0;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    &--first {
+      display: table-cell;
+      padding: 13px 0 17px 21px;
+    }
+  }
+
+  .rate__hit {
+    top: 0;
+    left: 0;
+
+    width: 74px;
+    height: 73px;
+
+    &::before {
+      width: 73px;
+      height: 73px;
+    }
+
+    &::after {
+      top: 5px;
+      width: 73px;
+      height: 73px;
+
+      font-size: 14px;
+    }
+  }
+}

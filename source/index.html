@@ -3,348 +3,382 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Пинк - Главная</title>
+  <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="front-page">
 
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
 
   <header class="page-header">
-    <nav class="main-nav  main-nav--closed  main-nav--nojs">
-      <div class="main-nav__layout-positioner">
-        <div class="main-nav__wrapper">
-          <a class="logo  logo--header">
-            <svg width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
-              <g class="logo__pink">
-                <path fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z" />
-                <path fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z" />
-                <path fill="#FFFFFF" d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.224,0.58,1.224,1.256v20.349c0,0.676-0.481,1.19-1.158,1.19h-0.129c-0.548,0-0.935-0.321-1.319-0.772l-13.975-17.868v17.45c0,0.676-0.547,1.256-1.256,1.256c-0.676,0-1.223-0.58-1.223-1.256V18.532 H102.744z" />
-                <path fill="#FFFFFF" d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.168 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.935c0,0.676-0.578,1.288-1.286,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.402-10.463l-4.863,4.861 v4.894c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z" />
+
+    <div class="page-header__top page-header__top--open">
+      <div class="page-header__main-wrapper">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo" href="#">
+            <svg class="logo-icon" viewBox="0 0 146.3 40.375" width="146" height="40">
+              <g class="logo-icon__mobile">
+                <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"></path>
+                <path d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"></path>
+                <path d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.224,0.58,1.224,1.256v20.349c0,0.676-0.481,1.19-1.158,1.19h-0.129c-0.548,0-0.935-0.321-1.319-0.772l-13.975-17.868v17.45c0,0.676-0.547,1.256-1.256,1.256c-0.676,0-1.223-0.58-1.223-1.256V18.532 H102.744z"></path>
+                <path d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.168 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.935c0,0.676-0.578,1.288-1.286,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.402-10.463l-4.863,4.861 v4.894c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"></path>
               </g>
-              <g class="logo__glasses  logo__glasses--no-glare  logo__glasses--header">
-                <path fill="#FFFFFF" d="M60.498,28.266" />
-                <path fill="#FFFFFF" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531c4.475,0,8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z" />
+              <g class="logo-icon__desktop">
+                <path d="M98.498,9.875c-2.002,0-3.623-1.623-3.623-3.624c0,2.001-1.623,3.624-3.625,3.624 c2.002,0,3.625,1.623,3.625,3.624C94.875,11.498,96.496,9.875,98.498,9.875z"></path>
               </g>
-              <g class="logo__glasses  logo__glasses--glare  logo__glasses--header">
-                <path fill="#FFFFFF" d="M43.094,19.313c0.246,0,0.489,0.014,0.73,0.033c-0.437-0.728-1.227-1.221-2.136-1.221 c-0.877,0-1.614-0.568-1.884-1.354c-0.727,0.208-1.425,0.482-2.089,0.816c0.062,0.017,0.122,0.038,0.188,0.038c1.104,0,2,0.896,2,2 c0,0.096-0.015,0.188-0.028,0.281C40.875,19.524,41.959,19.313,43.094,19.313z" />
-                <path fill="#FFFFFF" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.445-3.557-2.453-6.628-5.305-8.522c-0.897,0.379-1.529,1.269-1.529,2.303c0,0.088-0.015,0.171-0.026,0.256 c1.991,1.358,3.415,3.489,3.829,5.964c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.716,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5 s0.053-1.011,0.135-1.5c0.147-0.878,0.427-1.711,0.808-2.483c-1.034-0.078-1.852-0.932-1.852-1.985 c0-0.189-0.077-0.357-0.192-0.489c-0.938,1.469-1.569,3.15-1.795,4.958h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.079,0.628,0.215,1.237,0.387,1.831c0.059-0.106,0.102-0.224,0.102-0.354 c0-1.104,0.896-2,2-2c0.166,0,0.324,0.025,0.478,0.063c-0.043-0.343-0.074-0.688-0.074-1.042c0-0.512,0.053-1.011,0.135-1.5 c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.715,4.272-4.421,7.531-8.896,7.531c-2.022,0-3.883-0.67-5.386-1.794c-0.35,0.302-0.8,0.491-1.299,0.491 c-0.413,0-0.749,0.336-0.749,0.748c0,0.29-0.065,0.564-0.176,0.812c2.075,1.708,4.722,2.743,7.614,2.743 c6.125,0,11.185-4.604,11.927-10.53h1.814c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59 c0.012,0,0.023-0.004,0.036-0.004C59.931,29.842,60.728,29.125,60.462,28.016z" />
+              <g class="logo-icon__tablet">
+                <path d="M60.498,28.266"></path>
+                <path d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531c4.475,0,8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"></path>
               </g>
-              <g class="logo__glare">
-                <g>
-                  <path fill="#D22856" d="M50.686,16.125c-2.485,0-4.499-2.014-4.499-4.499c0,2.485-2.014,4.499-4.499,4.499 c2.485,0,4.499,2.014,4.499,4.499C46.187,18.139,48.2,16.125,50.686,16.125z" />
-                </g>
+              <g class="logo-icon__desktop-glass">
+                <path d="M43.094,19.313c0.246,0,0.489,0.014,0.73,0.033c-0.437-0.728-1.227-1.221-2.136-1.221 c-0.877,0-1.614-0.568-1.884-1.354c-0.727,0.208-1.425,0.482-2.089,0.816c0.062,0.017,0.122,0.038,0.188,0.038c1.104,0,2,0.896,2,2 c0,0.096-0.015,0.188-0.028,0.281C40.875,19.524,41.959,19.313,43.094,19.313z"></path>
+                <path d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.445-3.557-2.453-6.628-5.305-8.522c-0.897,0.379-1.529,1.269-1.529,2.303c0,0.088-0.015,0.171-0.026,0.256 c1.991,1.358,3.415,3.489,3.829,5.964c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.716,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5 s0.053-1.011,0.135-1.5c0.147-0.878,0.427-1.711,0.808-2.483c-1.034-0.078-1.852-0.932-1.852-1.985 c0-0.189-0.077-0.357-0.192-0.489c-0.938,1.469-1.569,3.15-1.795,4.958h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.079,0.628,0.215,1.237,0.387,1.831c0.059-0.106,0.102-0.224,0.102-0.354 c0-1.104,0.896-2,2-2c0.166,0,0.324,0.025,0.478,0.063c-0.043-0.343-0.074-0.688-0.074-1.042c0-0.512,0.053-1.011,0.135-1.5 c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.715,4.272-4.421,7.531-8.896,7.531c-2.022,0-3.883-0.67-5.386-1.794c-0.35,0.302-0.8,0.491-1.299,0.491 c-0.413,0-0.749,0.336-0.749,0.748c0,0.29-0.065,0.564-0.176,0.812c2.075,1.708,4.722,2.743,7.614,2.743 c6.125,0,11.185-4.604,11.927-10.53h1.814c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59 c0.012,0,0.023-0.004,0.036-0.004C59.931,29.842,60.728,29.125,60.462,28.016z"></path>
               </g>
-              <g class="logo__glare">
-                <g>
-                  <path fill="#D22856" d="M37.904,19.626c-1.519,0-2.749-1.23-2.749-2.749c0,1.519-1.23,2.749-2.749,2.749 c1.519,0,2.749,1.229,2.749,2.749C35.155,20.855,36.386,19.626,37.904,19.626z" />
-                </g>
-              </g>
-              <g class="logo__glare">
-                <g>
-                  <path fill="#D22856" d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z" />
-                </g>
+              <g class="logo-icon__desktop">
+                <path d="M50.686,16.125c-2.485,0-4.499-2.014-4.499-4.499c0,2.485-2.014,4.499-4.499,4.499 c2.485,0,4.499,2.014,4.499,4.499C46.187,18.139,48.2,16.125,50.686,16.125z"></path>
+                <path d="M37.904,19.626c-1.519,0-2.749-1.23-2.749-2.749c0,1.519-1.23,2.749-2.749,2.749 c1.519,0,2.749,1.229,2.749,2.749C35.155,20.855,36.386,19.626,37.904,19.626z"></path>
+                <path d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z"></path>
               </g>
             </svg>
           </a>
-          <button class="main-nav__toggle  main-nav__toggle--opened" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-            <svg class="main-nav__toggle-icon  main-nav__toggle-icon--opened" width="50" height="24" version="1.0" id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px"
-              height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
-              <g id="miu">
-                <g id="editor_list_view_hambuger_menu_glyph">
-                  <g>
-                    <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z" />
-                  </g>
-                  <g>
-                    <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z" />
-                  </g>
-                </g>
-              </g>
-            </svg>
-            <svg class="main-nav__toggle-icon  main-nav__toggle-icon--closed" width="24" height="23" version="1.0" id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px"
-              height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-              <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z" />
-            </svg>
+          <button class="page-header__hamburger page-header__hamburger--open" type="button">
+            <span class="visually-hidden">Меню</span>
           </button>
         </div>
-        <ul class="main-nav__list  site-list">
-          <li class="site-list__item  site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="page-header__content  page-header__content--index">
-      <h1 class="visually-hidden">Мобильное приложение Пинк</h1>
-      <section class="download">
-        <div class="download__wrapper">
-          <h2 class="visually-hidden">Скачать мобильное приложение Пинк</h2>
-          <b class="download__slogan">Взгляните на жизнь иначе!</b>
-          <a class="download__link" href="https://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com">Скачать
-            приложение</a>
-          <ul class="download__os  os">
-            <li class="download__item">
-              <a class="os__link  os__link--apple" href="#">
-                <span class="visually-hidden">Эпл</span>
-              </a>
+        <nav class="page-header__navigation page-header__navigation--open main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__wrapper main-nav__wrapper--desktop main-nav__link--active">Главная</a>
             </li>
-            <li class="download__item">
-              <a class="os__link  os__link--android" href="#">
-                <span class="visually-hidden">Андроид</span>
-              </a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__wrapper main-nav__wrapper--desktop" href="photo.html">Фотографии</a>
             </li>
-            <li class="download__item">
-              <a class="os__link  os__link--windows" href="#">
-                <span class="visually-hidden">Виндовс</span>
-              </a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__wrapper main-nav__wrapper--desktop" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__wrapper main-nav__wrapper--desktop" href="https://htmlacademy.ru/intensive/adaptive">HTML
+                Academy</a>
             </li>
           </ul>
-          <p class="download__for">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
-      </section>
+        </nav>
+      </div>
     </div>
+
+    <div class="page-header__intro intro">
+      <div class="intro__wrapper intro__wrapper--front-page">
+        <h1 class="intro__title intro__title--front-page">Взгляните на жизнь иначе!</h1>
+      </div>
+      <div class="intro__apps">
+        <div class="intro__wrapper">
+          <div class="apps">
+            <a class="button apps__button" href="https://itunes.apple.com/ru/store">Скачать приложение</a>
+            <ul class="apps__list">
+              <li class="apps__item">
+                <a class="apps__link" href="https://itunes.apple.com/ru/store">
+                  <img class="apps__img" src="img/logo-apple.svg" alt="apple icon" width="47" height="56">
+                  <span class="visually-hidden">Скачать приложение для apple</span>
+                </a>
+              </li>
+              <li class="apps__item">
+                <a class="apps__link" href="https://play.google.com/store/apps/">
+                  <img class="apps__img" src="img/logo-android.svg" alt="andriod icon" width="43" height="47">
+                  <span class="visually-hidden">Скачать приложение для android</span>
+                </a>
+              </li>
+              <li class="apps__item">
+                <a class="apps__link" href="https://www.microsoft.com/ru-ru/store/top-free/apps/pc">
+                  <img class="apps__img" src="img/logo-microsoft.svg" alt="windows icon" width="44" height="41">
+                  <span class="visually-hidden">Скачать приложение для windows phone</span>
+                </a>
+              </li>
+            </ul>
+            <p class="apps__info">Доступно для iPhone, iPad, Android, Windows&nbsp;Phone, OS&nbsp;X, Windows&nbsp;8</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </header>
-  <main>
-    <div class="preamble">
-      <div class="preamble__wrapper">
-        <p class="preamble__item">Устали от серости мегаполиса?</p>
-        <p class="preamble__item">Нам есть, что вам предложить!</p>
+
+  <main class="page-content">
+
+    <section class="page-content__features features">
+      <div class="features__wrapper">
+        <h2 class="features__title">Устали от серости мегаполиса?</h2>
+        <h2 class="features__title">Нам есть, что вам предложить!</h2>
       </div>
-    </div>
-    <section class="advantages">
-      <div class="advantages__wrapper">
-        <h2 class="visually-hidden">Преимущества мобильного приложения Пинк</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-              несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-              усилить
-              эффект</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-              новых</p>
-          </li>
-        </ul>
-      </div>
-      <div class="additional">
-        <div class="additional__wrapper">
-          <h3 class="additional__title">Эффект<br> на 24 часа!</h3>
-          <p class="additional__content">Британские ученые провели исследования и
-            доказали,<br> что положительный эффект<br> от использования приложения длится целые сутки!</p>
-          <a href="#" class="additional__link">Узнать больше об исследовании</a>
-        </div>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="reviews__wrapper">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews__controls">
-          <i class="reviews__label  reviews__label--active">
-            <span class="visually-hidden">Николай Петров</span>
-          </i>
-          <i class="reviews__label">
-            <span class="visually-hidden"></span>
-          </i>
-          <i class="reviews__label">
-            <span class="visually-hidden"></span>
-          </i>
-        </div>
-        <div class="reviews__switches">
-          <label class="reviews__switch  reviews__switch--previous" for="drills">
-            <span class="visually-hidden">Предыдущий слайд</span>
-          </label>
-          <label class="reviews__switch  reviews__switch--next" for="punchers">
-            <span class="visually-hidden">Следующий слайд</span>
-          </label>
-        </div>
-        <ul class="reviews__slides">
-          <li class="reviews__slide">
-            <div class="reviews__title">
-              <b class="reviews__author">Николай Петров</b>
-              <i class="reviews__description">25 лет, водитель трамвая</i>
+      <div class="features__content">
+        <div class="features__wrapper-tablet">
+          <div class="features__list">
+            <div class="feature feature--screen-1">
+              <h3 class="feature__title">Поднимает настроение</h3>
+              <p class="feature__info">Приложение позволит вам победить осеннюю хандру и депреcсию буквально в
+                несколько кликов!</p>
             </div>
-            <p class="reviews__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-              фотографии!»</p>
-          </li>
-          <li class="reviews__slide"></li>
-          <li class="reviews__slide"></li>
-        </ul>
+            <div class="feature feature--screen-2">
+              <h3 class="feature__title">Меняет мир вокруг</h3>
+              <p class="feature__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                усилить&nbsp;эффект</p>
+            </div>
+            <div class="feature feature--screen-3">
+              <h3 class="feature__title">Заводит новых друзей</h3>
+              <p class="feature__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="prices">
-      <h2 class="visually-hidden">Пакеты услуг</h2>
-      <input type="radio" id="btn-1" name="toggle">
-      <input type="radio" id="btn-2" name="toggle" checked>
-      <input type="radio" id="btn-3" name="toggle">
-      <div class="prices__wrapper">
-        <table class="prices__table">
-          <thead class="prices__table-head">
-            <tr class="prices__table-row">
-              <th class="prices__table-heading"></th>
-              <th class="prices__table-heading">
-                <h3 class="prices__title">База</h3>
-                <span class="prices__cost">1,99 USD</span>
+
+    <section class="page-content__effect">
+      <div class="effect">
+        <div class="effect__timer">
+          <span class="effect__time">24</span>
+        </div>
+        <div class="effect__content">
+          <h3 class="effect__title">Эффект на&nbsp;24 часа!</h3>
+          <p class="effect__description">Британские ученые провели исследования и доказали, что&nbsp;положительный
+            эффект от&nbsp;использования приложения длится целые сутки!</p>
+          <a class="effect__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-content__reviews reviews">
+      <div class="reviews__wrapper">
+        <h2 class="visually-hidden">Отзывы:</h2>
+        <div class="reviews-slider">
+          <input class="visually-hidden reviews-slider__tab-1" type="radio" id="review-tab-1" name="reviews" checked="">
+          <input class="visually-hidden reviews-slider__tab-2" type="radio" id="review-tab-2" name="reviews">
+          <input class="visually-hidden reviews-slider__tab-3" type="radio" id="review-tab-3" name="reviews">
+          <ul class="reviews__list reviews-slider__list">
+            <li class="reviews__item review reviews-slider__item" id="review-slider-1">
+              <p class="review__author">Николай Петров <span class="review__post">25 лет, водитель трамвая</span></p>
+              <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </li>
+            <li class="reviews__item review reviews-slider__item" id="review-slider-2">
+              <p class="review__author">Николай Петров 2 <span class="review__post">25 лет, водитель трамвая</span></p>
+              <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </li>
+            <li class="reviews__item review reviews-slider__item" id="review-slider-3">
+              <p class="review__author">Николай Петров 3 <span class="review__post">25 лет, водитель трамвая</span></p>
+              <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </li>
+          </ul>
+          <div class="reviews__toggles reviews-slider__toggles">
+            <label class="reviews-slider__toggle" for="review-tab-1"><span class="visually-hidden">1</span></label>
+            <label class="reviews-slider__toggle" for="review-tab-2"><span class="visually-hidden">2</span></label>
+            <label class="reviews-slider__toggle" for="review-tab-3"><span class="visually-hidden">3</span></label>
+          </div>
+          <button class="reviews-slider__back reviews-slider__back--disable" type="button"><span class="visually-hidden">Назад</span></button>
+          <button class="reviews-slider__next" type="button"><span class="visually-hidden">Вперед</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-content__rates rates">
+      <div class="rates__wrapper">
+        <h2 class="visually-hidden">Тарифы:</h2>
+        <input class="visually-hidden rates__tab-1" type="radio" id="rates-tab-1" name="rates-tab">
+        <input class="visually-hidden rates__tab-2" type="radio" id="rates-tab-2" name="rates-tab" checked="">
+        <input class="visually-hidden rates__tab-3" type="radio" id="rates-tab-3" name="rates-tab">
+        <table class="rates__table rate">
+          <tbody>
+            <tr>
+              <th class="rate__header rate__header--first"></th>
+              <th class="rate__header">
+                База
+                <span class="rate__price">1,99 USD</span>
               </th>
-              <th class="prices__table-heading">
-                <span class="most-popular">
-                  <b>хит</b>
-                </span>
-                <h3 class="prices__title">Стандарт</h3>
-                <span class="prices__cost">3,99 USD</span>
+              <th class="rate__header">
+                <span class="rate__hit">Хит</span>
+                Стандарт
+                <span class="rate__price">3,99 USD</span>
               </th>
-              <th class="prices__table-heading">
-                <h3 class="prices__title">Анлим</h3>
-                <span class="prices__cost">9,99 USD</span>
+              <th class="rate__header">
+                Анлим
+                <span class="rate__price">9,99 USD</span>
               </th>
             </tr>
-          </thead>
-          <tbody class="prices__table-body">
-            <tr class="prices__table-row">
-              <td class="prices__table-cell">Розовый фильтр</td>
-              <td class="prices__table-cell  prices__table-cell--enabled">Розовый фильтр</td>
-              <td class="prices__table-cell  prices__table-cell--enabled">Розовый фильтр</td>
-              <td class="prices__table-cell  prices__table-cell--enabled">Розовый фильтр</td>
+            <tr>
+              <td class="rate__cell rate__cell--first">
+                Розовый фильтр
+              </td>
+              <td class="rate__cell">
+                <span class="rate__text">Розовый фильтр</span>
+                <span class="rate__option rate__option--yes"></span>
+                <span class="visually-hidden"> - Да</span>
+              </td>
+              <td class="rate__cell">
+                <span class="rate__text">Розовый фильтр</span>
+                <span class="rate__option rate__option--yes"></span>
+                <span class="visually-hidden"> - Да</span>
+              </td>
+              <td class="rate__cell">
+                <span class="rate__text">Розовый фильтр</span>
+                <span class="rate__option rate__option--yes"></span>
+                <span class="visually-hidden"> - Да</span>
+              </td>
             </tr>
-            <tr class="prices__table-row">
-              <td class="prices__table-cell">Смайлики</td>
-              <td class="prices__table-cell  prices__table-cell--disabled">Смайлики</td>
-              <td class="prices__table-cell  prices__table-cell--enabled">Смайлики</td>
-              <td class="prices__table-cell  prices__table-cell--enabled">Смайлики</td>
+            <tr>
+              <td class="rate__cell rate__cell--first">
+                Смайлики
+              </td>
+              <td class="rate__cell">
+                <span class="rate__text">Смайлики</span>
+                <span class="rate__option rate__option--no"></span>
+                <span class="visually-hidden"> - Нет</span>
+              </td>
+              <td class="rate__cell">
+                <span class="rate__text">Смайлики</span>
+                <span class="rate__option rate__option--yes"></span>
+                <span class="visually-hidden"> - Да</span>
+              </td>
+              <td class="rate__cell">
+                <span class="rate__text">Смайлики</span>
+                <span class="rate__option rate__option--yes"></span>
+                <span class="visually-hidden"> - Да</span>
+              </td>
             </tr>
-            <tr class="prices__table-row">
-              <td class="prices__table-cell">Комментарии</td>
-              <td class="prices__table-cell  prices__table-cell--disabled">Комментарии</td>
-              <td class="prices__table-cell  prices__table-cell--disabled">Комментарии</td>
-              <td class="prices__table-cell  prices__table-cell--enabled">Комментарии</td>
+            <tr>
+              <td class="rate__cell rate__cell--first">
+                Комментарии
+              </td>
+              <td class="rate__cell">
+                <span class="rate__text">Комментарии</span>
+                <span class="rate__option rate__option--no"></span>
+                <span class="visually-hidden"> - Нет</span>
+              </td>
+              <td class="rate__cell">
+                <span class="rate__text">Комментарии</span>
+                <span class="rate__option rate__option--no"></span>
+                <span class="visually-hidden"> - Нет</span>
+              </td>
+              <td class="rate__cell">
+                <span class="rate__text">Комментарии</span>
+                <span class="rate__option rate__option--yes"></span>
+                <span class="visually-hidden"> - Да</span>
+              </td>
             </tr>
           </tbody>
         </table>
-      </div>
-      <div class="prices__controls">
-        <label for="btn-1">
-          <span class="visually-hidden">Базовый</span>
-        </label>
-        <label for="btn-2">
-          <span class="visually-hidden">Стандартный</span>
-        </label>
-        <label for="btn-3">
-          <span class="visually-hidden">Безлимитный</span>
-        </label>
-      </div>
-    </section>
-    <section class="feedback">
-      <div class="feedback__wrapper">
-        <b class="feedback__contact-us">Остались вопросы? Свяжитесь с нами!</b>
-        <div class="feedback__contact-us-block">
-          <p class="feedback__item  feedback__item--call-us">
-            <b class="feedback__plea">Звоните:</b>
-            <a class="feedback__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </p>
-          <p class="feedback__item  feedback__item--write-us">
-            <b class="feedback__plea  feedback__plea--write-us">Пишите:</b>
-            <a class="feedback__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-          <p class="feedback__item  feedback__item--visit-us">
-            <b class="feedback__plea">Приезжайте в гости:</b>
-            <a class="feedback__link" href="img/bg-map-mobile@1x.png">ул. Большая Конюшенная, 19/8</a>
-          </p>
+        <div class="rates__toggles">
+          <label class="rates__toggle" for="rates-tab-1">
+            <span class="visually-hidden">1</span>
+          </label>
+          <label class="rates__toggle" for="rates-tab-2">
+            <span class="visually-hidden">2</span>
+          </label>
+          <label class="rates__toggle" for="rates-tab-3">
+            <span class="visually-hidden">3</span>
+          </label>
         </div>
       </div>
-      <div class="map">
-        <picture>
-          <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp">
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp">
-          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp">
+    </section>
 
-          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg">
-          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg">
-          <img class="map__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg" alt="ул. Большая Конюшенная, 19/8">
-        </picture>
+    <section class="page-content__contacts contacts">
+      <div class="contacts__wrapper contacts__info">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <div class="contact">
+          <p class="contact__title">Звоните:</p>
+          <a class="contact__link contact__link" href="tel:78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contact contact--email">
+          <p class="contact__title">Пишите:</p>
+          <a class="contact__link contact__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contact">
+          <p class="contact__title">Приезжайте в гости:</p>
+          <p class="contact__link">ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </div>
+      <div class="contacts__map">
+        <iframe class="contacts__google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6180397169198!2d30.3221247!3d59.93848!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1541435271930"
+          width="320" height="600" style="border: 0;" allowfullscreen></iframe>
       </div>
     </section>
+
   </main>
-  <footer class="footer  footer--index">
+
+  <footer class="page-footer footer page-footer--hide">
     <div class="footer__wrapper">
-      <a class="logo  logo--footer" href="index.html">
-        <svg width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
-          <g class="logo__pink">
-            <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z" />
-            <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z" />
-            <path fill="#283645" d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.225,0.58,1.225,1.256v20.349c0,0.677-0.48,1.19-1.158,1.19h-0.129 c-0.548,0-0.936-0.321-1.318-0.772l-13.976-17.867v17.449c0,0.677-0.547,1.257-1.257,1.257c-0.676,0-1.223-0.58-1.223-1.257V18.532 H102.744z" />
-            <path fill="#283645" d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.168 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.936c0,0.676-0.577,1.288-1.285,1.288c-0.482,0-0.807-0.259-1.03-0.58l-8.401-10.464l-4.863,4.861 v4.895c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z" />
+      <a class="footer__logo" href="index.html">
+        <svg viewBox="0 0 146.3 40.375" width="146" height="40">
+          <g class="footer-logo-text">
+            <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"></path>
+            <path d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"></path>
+            <path d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.224,0.58,1.224,1.256v20.349c0,0.676-0.481,1.19-1.158,1.19h-0.129c-0.548,0-0.935-0.321-1.319-0.772l-13.975-17.868v17.45c0,0.676-0.547,1.256-1.256,1.256c-0.676,0-1.223-0.58-1.223-1.256V18.532 H102.744z"></path>
+            <path d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.168 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.935c0,0.676-0.578,1.288-1.286,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.402-10.463l-4.863,4.861 v4.894c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"></path>
           </g>
-          <path fill="#D22856" d="M98.498,9.875c-2.002,0-3.623-1.623-3.623-3.624c0,2.001-1.623,3.624-3.625,3.624 c2.002,0,3.625,1.623,3.625,3.624C94.875,11.498,96.496,9.875,98.498,9.875z" />
-          <g class="logo__glasses  logo__glasses--glare  logo__glasses--footer">
-            <path fill="#D22856" d="M43.094,19.313c0.246,0,0.489,0.014,0.73,0.033c-0.437-0.728-1.227-1.221-2.136-1.221 c-0.877,0-1.614-0.568-1.884-1.354c-0.727,0.208-1.425,0.482-2.089,0.816c0.062,0.017,0.122,0.038,0.188,0.038c1.104,0,2,0.896,2,2 c0,0.096-0.015,0.188-0.028,0.281C40.875,19.524,41.959,19.313,43.094,19.313z" />
-            <path fill="#D22856" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.445-3.557-2.453-6.628-5.305-8.522c-0.897,0.379-1.529,1.269-1.529,2.303c0,0.088-0.015,0.171-0.026,0.256 c1.991,1.358,3.415,3.489,3.829,5.965c0.082,0.488,0.135,0.987,0.135,1.5c0,0.512-0.053,1.012-0.135,1.5 c-0.716,4.271-4.421,7.53-8.896,7.53c-4.475,0-8.181-3.259-8.896-7.53c-0.082-0.488-0.135-0.988-0.135-1.5 c0-0.513,0.053-1.012,0.135-1.5c0.147-0.879,0.427-1.712,0.808-2.484c-1.034-0.077-1.852-0.932-1.852-1.984 c0-0.189-0.077-0.357-0.192-0.488c-0.938,1.469-1.569,3.149-1.795,4.957h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.079,0.629,0.215,1.237,0.387,1.831c0.059-0.106,0.102-0.224,0.102-0.354 c0-1.104,0.896-2,2-2c0.166,0,0.324,0.024,0.478,0.062c-0.043-0.343-0.074-0.688-0.074-1.042c0-0.512,0.053-1.011,0.135-1.5 c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.715,4.272-4.421,7.531-8.896,7.531c-2.022,0-3.883-0.67-5.386-1.794c-0.35,0.302-0.8,0.491-1.299,0.491 c-0.413,0-0.749,0.336-0.749,0.748c0,0.289-0.065,0.563-0.176,0.812c2.075,1.708,4.722,2.743,7.614,2.743 c6.125,0,11.185-4.604,11.927-10.529h1.814c0.742,5.926,5.802,10.529,11.927,10.529s11.186-4.604,11.927-10.529H59 c0.012,0,0.023-0.005,0.036-0.005C59.931,29.842,60.728,29.125,60.462,28.016z" />
+          <g class="footer-logo-star">
+            <path d="M98.498,9.875c-2.002,0-3.623-1.623-3.623-3.624c0,2.001-1.623,3.624-3.625,3.624 c2.002,0,3.625,1.623,3.625,3.624C94.875,11.498,96.496,9.875,98.498,9.875z"></path>
           </g>
-          <g class="logo__glare">
-            <g>
-              <path fill="#283645" d="M50.686,16.125c-2.485,0-4.499-2.014-4.499-4.499c0,2.485-2.014,4.499-4.499,4.499 c2.485,0,4.499,2.014,4.499,4.499C46.187,18.139,48.2,16.125,50.686,16.125z" />
-            </g>
+          <g class="footer-logo-glass">
+            <path d="M60.498,28.266"></path>
+            <path d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531c4.475,0,8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"></path>
           </g>
-          <g class="logo__glare">
-            <g>
-              <path fill="#283645" d="M37.904,19.626c-1.519,0-2.749-1.23-2.749-2.749c0,1.519-1.23,2.749-2.749,2.749 c1.519,0,2.749,1.229,2.749,2.749C35.155,20.855,36.386,19.626,37.904,19.626z" />
-            </g>
+          <g class="footer-logo-desktop-glass">
+            <path d="M43.094,19.313c0.246,0,0.489,0.014,0.73,0.033c-0.437-0.728-1.227-1.221-2.136-1.221 c-0.877,0-1.614-0.568-1.884-1.354c-0.727,0.208-1.425,0.482-2.089,0.816c0.062,0.017,0.122,0.038,0.188,0.038c1.104,0,2,0.896,2,2 c0,0.096-0.015,0.188-0.028,0.281C40.875,19.524,41.959,19.313,43.094,19.313z"></path>
+            <path d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.445-3.557-2.453-6.628-5.305-8.522c-0.897,0.379-1.529,1.269-1.529,2.303c0,0.088-0.015,0.171-0.026,0.256 c1.991,1.358,3.415,3.489,3.829,5.964c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.716,4.272-4.421,7.531-8.896,7.531c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5 s0.053-1.011,0.135-1.5c0.147-0.878,0.427-1.711,0.808-2.483c-1.034-0.078-1.852-0.932-1.852-1.985 c0-0.189-0.077-0.357-0.192-0.489c-0.938,1.469-1.569,3.15-1.795,4.958h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.079,0.628,0.215,1.237,0.387,1.831c0.059-0.106,0.102-0.224,0.102-0.354 c0-1.104,0.896-2,2-2c0.166,0,0.324,0.025,0.478,0.063c-0.043-0.343-0.074-0.688-0.074-1.042c0-0.512,0.053-1.011,0.135-1.5 c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5s-0.053,1.012-0.135,1.5 c-0.715,4.272-4.421,7.531-8.896,7.531c-2.022,0-3.883-0.67-5.386-1.794c-0.35,0.302-0.8,0.491-1.299,0.491 c-0.413,0-0.749,0.336-0.749,0.748c0,0.29-0.065,0.564-0.176,0.812c2.075,1.708,4.722,2.743,7.614,2.743 c6.125,0,11.185-4.604,11.927-10.53h1.814c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59 c0.012,0,0.023-0.004,0.036-0.004C59.931,29.842,60.728,29.125,60.462,28.016z"></path>
           </g>
-          <g class="logo__glare">
-            <g>
-              <path fill="#283645" d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z" />
-            </g>
+          <g class="footer-logo-desktop">
+            <path d="M50.686,16.125c-2.485,0-4.499-2.014-4.499-4.499c0,2.485-2.014,4.499-4.499,4.499 c2.485,0,4.499,2.014,4.499,4.499C46.187,18.139,48.2,16.125,50.686,16.125z"></path>
+          </g>
+          <g class="footer-logo-desktop">
+            <path d="M37.904,19.626c-1.519,0-2.749-1.23-2.749-2.749c0,1.519-1.23,2.749-2.749,2.749 c1.519,0,2.749,1.229,2.749,2.749C35.155,20.855,36.386,19.626,37.904,19.626z"></path>
+          </g>
+          <g class="footer-logo-desktop">
+            <path d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z"></path>
           </g>
         </svg>
       </a>
-      <div class="social">
-        <a class="social__item  social__item--tw" href="#">
-          <span class="visually-hidden">Твиттер</span>
-        </a>
-        <a class="social__item  social__item--fb" href="#">
-          <span class="visually-hidden">Фейсбук</span>
-        </a>
-        <a class="social__item  social__item--yb" href="#">
-          <span class="visually-hidden">Ютуб</span>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__button" href="#">
+            <svg class="social__icon" width="18" height="14">
+              <use xlink:href="#icon-twitter" x="0" y="0"></use>
+            </svg>
+            <span class="visually-hidden">Твитер</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__button" href="#">
+            <svg class="social__icon" width="9" height="18">
+              <use xlink:href="#icon-facebook" x="0" y="0"></use>
+            </svg>
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__button" href="#">
+            <svg class="social__icon" width="15" height="13">
+              <use xlink:href="#icon-youtube" x="0" y="0"></use>
+            </svg>
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <svg class="copyright__icon" viewBox="0 0 40 60" width="40" height="40">
+            <path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z" />
+          </svg><span class="visually-hidden">htmlacademy.ru</span>
         </a>
       </div>
-      <p class="footer__developed">
-        Разработано
-        <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">htmlacademy.ru</span>
-        </a>
-      </p>
     </div>
   </footer>
 
-  <script src="js/navigation.js"></script>
-  <script src="js/picturefill.js"></script>
-  <script src="js/svgxuse.js"></script>
-  
-
+  <script src="js/scripts.min.js"></script>
+  <script src="js/lib/picturefill.min.js"></script>
 </body>
 
 </html>

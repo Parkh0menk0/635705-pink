@@ -1,67 +1,118 @@
-.footer {
-  background-color: #ffffff;
-  font-size: 14px;
-  line-height: 18px;
+.footer__wrapper {
+  .wrapper(@mobile-width);
+}
+
+.footer__logo {
+  display: inline-block;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 35px;
+
   text-align: center;
 
-  &--index {
+  &:active {
+    opacity: 0.3;
+  }
+
+  outline: none;
+}
+
+.footer-logo-desktop-glass,
+.footer-logo-desktop {
+  display: none;
+}
+
+.footer-logo-star {
+  display: none;
+}
+
+.footer-logo-text {
+  fill: @bg-darkblue;
+}
+
+.footer__logo:hover .footer-logo-text,
+.footer__logo:focus .footer-logo-text {
+  fill: @pink;
+}
+
+.footer__logo:active .footer-logo-text {
+  fill: @bg-darkblue;
+}
+
+.footer-logo-glass {
+  fill: @pink;
+}
+
+.footer__social {
+  width: 100%;
+}
+
+.footer__copyright {
+  width: 130px;
+  margin: 0 auto;
+  padding: 30px 0 30px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .footer__wrapper {
+    .wrapper(@tablet-width);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .footer__logo {
+    width: auto;
+    margin: -10px 0 0 0;
+  }
+
+  .footer__social {
+    width: auto;
+    margin-left: -15px;
+  }
+
+  .footer__copyright {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__wrapper {
+    .wrapper(@desktop-width, 10px);
+
+    padding-top: 68px;
+    padding-bottom: 50px;
+  }
+
+  .footer__social {
+    margin-left: 16px;
+  }
+
+  .footer__copyright {
+    width: auto;
+  }
+
+  .footer-logo-glass {
     display: none;
   }
-}
 
-.footer__wrapper {
-  .wrapper();
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 204px;
-}
-
-.footer__developed {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  width: 130px;
-}
-
-.html-academy-logo {
-  fill: @pink;
-  position: relative;
-  top: 4px;
-
-  &:hover {
-    fill: @navy;
+  .footer-logo-star {
+    display: block;
+    fill: @pink;
   }
 
-  &:active {
-    fill: rgba(40, 54, 69, 0.3);
-  }
-}
-
-@media @tablet-width {
-  .footer__wrapper {
-    .wrapper();
-    flex-direction: row;
-    justify-content: space-between;
-    min-height: 127px;
+  .footer-logo-desktop-glass {
+    display: block;
+    fill: @pink;
   }
 
-  .footer {
-    &--index {
-      display: block;
-    }
-  }
-}
-
-@media @desktop-width {
-  .footer__wrapper {
-    min-height: 198px;
-  }
-
-  .footer__developed {
-    font-size: 18px;
-    width: 153px;
+  .footer-logo-desktop {
+    display: block;
+    fill: @bg-darkblue;
   }
 }

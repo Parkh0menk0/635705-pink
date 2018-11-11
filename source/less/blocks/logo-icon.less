@@ -1,0 +1,36 @@
+.logo-icon {
+  fill: @white;
+  margin: -17px 0 0 -72px;
+}
+
+.logo-icon__desktop {
+  fill: @pink;
+}
+
+.logo-icon__desktop-glass,
+.logo-icon__desktop,
+.logo-icon__tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo-icon {
+    fill: @white;
+    margin: 0;
+  }
+
+  .logo-icon__tablet {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo-icon__tablet {
+    display: none;
+  }
+
+  .logo-icon__desktop,
+  .logo-icon__desktop-glass {
+    display: block;
+  }
+}

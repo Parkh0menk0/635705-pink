@@ -1,0 +1,88 @@
+.apps__wrapper {
+  .wrapper(@mobile-width);
+}
+
+.apps__list {
+  .list-reset();
+
+  display: flex;
+  justify-content: center;
+
+  margin: 32px 0 22px 0;
+}
+
+.apps__info {
+  font-weight: 300;
+  text-align: center;
+  color: @white;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.apps__item {
+  display: flex;
+  align-items: flex-end;
+
+  padding: 0 18px;
+}
+
+.apps__link {
+  display: flex;
+}
+
+.apps__button {
+  width: 100%;
+  color: @white;
+  padding: 11px 20px 14px 20px;
+  font-weight: 700;
+  border-color: @white;
+  display: block;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: @white;
+    color: @pink;
+  }
+
+  &:active {
+    background-color: @white;
+    color: fade(@pink, 30);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .apps {
+    width: 300px;
+    margin-right: auto;
+  }
+
+  .apps__info {
+    font-size: 18px;
+  }
+
+  .apps__list {
+    margin-top: 45px;
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .apps {
+    width: 300px;
+    margin-right: auto;
+  }
+
+  .apps__button {
+    font-size: 21px;
+  }
+
+  .apps__info {
+    font-size: 18px;
+  }
+
+  .apps__list {
+    margin-top: 65px;
+    margin-bottom: 58px;
+  }
+}
