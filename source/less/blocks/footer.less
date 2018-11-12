@@ -10,37 +10,37 @@
 
   text-align: center;
 
+  outline: none;
+
   &:active {
     opacity: 0.3;
   }
-
-  outline: none;
 }
 
-.footer-logo-desktop-glass,
-.footer-logo-desktop {
+.footer__logo-point {
   display: none;
 }
 
-.footer-logo-star {
+.footer__logo-glass {
+  fill: @pink;
+}
+
+.footer__logo-desktop-glass,
+.footer__logo-desktop {
   display: none;
 }
 
-.footer-logo-text {
+.footer__logo-lettering {
   fill: @bg-darkblue;
 }
 
-.footer__logo:hover .footer-logo-text,
-.footer__logo:focus .footer-logo-text {
+.footer__logo:hover .footer__logo-lettering,
+.footer__logo:focus .footer__logo-lettering {
   fill: @pink;
 }
 
-.footer__logo:active .footer-logo-text {
+.footer__logo:active .footer__logo-lettering {
   fill: @bg-darkblue;
-}
-
-.footer-logo-glass {
-  fill: @pink;
 }
 
 .footer__social {
@@ -89,6 +89,10 @@
     padding-bottom: 50px;
   }
 
+  .footer__logo-glass {
+    display: none;
+  }
+
   .footer__social {
     margin-left: 16px;
   }
@@ -97,21 +101,17 @@
     width: auto;
   }
 
-  .footer-logo-glass {
-    display: none;
-  }
-
-  .footer-logo-star {
+  .footer__logo-point {
     display: block;
     fill: @pink;
   }
 
-  .footer-logo-desktop-glass {
+  .footer__logo-desktop-glass {
     display: block;
     fill: @pink;
   }
 
-  .footer-logo-desktop {
+  .footer__logo-desktop {
     display: block;
     fill: @bg-darkblue;
   }
