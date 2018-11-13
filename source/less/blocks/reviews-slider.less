@@ -49,31 +49,31 @@
   height: 12px;
   margin: 0 7px;
 
-  background-color: fade(@bg-darkblue, 30);
+  background-color: rgba(40, 54, 69, 0.3);
   border: 3px solid @white;
   border-radius: 50%;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: fade(@bg-darkblue, 60);
+    background-color: rgba(40, 54, 69, 0.6);
   }
 
   &:active {
-    background-color: fade(@bg-darkblue, 10);
+    background-color: rgba(40, 54, 69, 0.1);
   }
 }
 
 .reviews-slider__tab-1:focus ~ .reviews-slider__toggles > .reviews-slider__toggle[for="review-tab-1"],
 .reviews-slider__tab-2:focus ~ .reviews-slider__toggles > .reviews-slider__toggle[for="review-tab-2"],
 .reviews-slider__tab-3:focus ~ .reviews-slider__toggles > .reviews-slider__toggle[for="review-tab-3"] {
-  background-color: fade(@bg-darkblue, 60);
+  background-color: rgba(40, 54, 69, 0.6);
 }
 
 .reviews-slider__tab-1:active ~ .reviews-slider__toggles > .reviews-slider__toggle[for="review-tab-1"],
 .reviews-slider__tab-2:active ~ .reviews-slider__toggles > .reviews-slider__toggle[for="review-tab-2"],
 .reviews-slider__tab-3:active ~ .reviews-slider__toggles > .reviews-slider__toggle[for="review-tab-3"] {
-  background-color: fade(@bg-darkblue, 10);
+  background-color: rgba(40, 54, 69, 0.1);
 }
 
 .reviews-slider__tab-1:checked ~ .reviews-slider__toggles > .reviews-slider__toggle[for="review-tab-1"],

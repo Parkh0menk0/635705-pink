@@ -99,7 +99,7 @@ gulp.task("build",
     "css",
     "copy",
     "html",
-    // "optimizeimages",
+    "optimizeimages",
     "webp"
   )
 );
